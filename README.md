@@ -58,7 +58,7 @@ flask run
  ```
 
 ## MagicBook In Action
-Full user stories for the initial development phase are available on the [User Stories](https://github.com/DanielLaV/MagicBook/wiki/User-Stories-&-Acceptance-Criteria) section of the project wiki. A feature list for the initial development phase is available on the [Feature List](https://github.com/DanielLaV/MagicBook/wiki/Feature-List) section of the project [wiki](https://github.com/DanielLaV/MagicBook/wiki).
+Full user stories for the initial development phase are available on the [User Stories](https://github.com/DanielLaV/MagicBook/wiki/User-Stories) section of the project wiki. A feature list for the initial development phase is available on the [Feature List](https://github.com/DanielLaV/MagicBook/wiki/Feature-List) section of the project [wiki](https://github.com/DanielLaV/MagicBook/wiki).
 
 ### User Registration and Authentication
 New users can register for an account by entering a unique username, email and a secure password.
@@ -125,7 +125,7 @@ Users can comment on posts. They can read other comments and edit and delete the
 
 ## Technical Implementation
 ### Database Design
-The full database schema is available to view [on dbdiagram.io](https://dbdiagram.io), or as a [list of tables on the Database Schema page](https://github.com/DanielLaV/MagicBook/wiki/Database-Schema) of the wiki.
+The full database schema is available to view [on dbdiagram.io](https://dbdiagram.io/d/620ae91585022f4ee5930200), or as a [list of tables on the Database Schema page](https://github.com/DanielLaV/MagicBook/wiki/Database-Schema) of the wiki.
 
 
 
