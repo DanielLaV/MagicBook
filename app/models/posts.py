@@ -19,4 +19,4 @@ class Post(db.Model, UserMixin):
 
 
     user = db.relationship("User", back_populates="post")
-    comment = db.relationship("Comment", back_populates="post")
+    comment = db.relationship("Comment", back_populates="post", cascade="all, delete")
