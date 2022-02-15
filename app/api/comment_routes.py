@@ -1,4 +1,4 @@
-from flask import Blueprint, session, request, make_response
+from flask import Blueprint, request
 from app.models import Comment, user, db
 from app.forms import CommentForm, DeleteCommentForm
 
