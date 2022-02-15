@@ -28,7 +28,7 @@ MagicBook is a website where students of Hogwarts can socialize and plan events,
    FLASK_APP=app
    FLASK_ENV=development
    SECRET_KEY=<<YOUR-SECRET_KEY>>
-   DATABASE_URL=postgresql://magicbook_dev:<<PASSWORD>>@localhost/magicbook_app
+   DATABASE_URL=postgresql://magicbook_app:<<PASSWORD>>@localhost/magicbook_db
 ```
 4. Set up your PostgreSQL user, password, and database. Make sure that it matches your .env file!
 
