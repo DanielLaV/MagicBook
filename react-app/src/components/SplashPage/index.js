@@ -18,8 +18,9 @@ const SplashPage = () => {
 
     sessionLinks = (
         <div>
-            <div className="">
-                <img className="banner" src={splash} alt="potion bottle with wand"></img>
+            <div className="bgImageContainer">
+                <img className="bgImage" src={splash} alt="potion bottle with wand"></img>
+
             </div>
         </div>
     )
