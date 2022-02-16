@@ -7,8 +7,8 @@ class Comment(db.Model, UserMixin):
 
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(512), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
-    post_id = db.Column(db.Integer, db.ForeignKey("posts.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), nullable=False)
 
 
 
@@ -21,5 +21,5 @@ class Comment(db.Model, UserMixin):
         }
 
 
-    user = db.relationship("User", back_populates="comment")
-    post = db.relationship("Post", back_populates="comment")
+    user = db.relationship('User', back_populates='comment')
+    post = db.relationship('Post', back_populates='comment')

@@ -11,7 +11,8 @@ class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(32), nullable=False)
     last_name = db.Column(db.String(32), nullable=False)
-    username = db.Column(db.String(16), nullable=False, unique=True)
+    username = db.Column(db.String(40), nullable=False, unique=True)
+    email = db.Column(db.String(255), nullable=False, unique=True)
     hashed_password = db.Column(db.String(255), nullable=False)
     house = db.Column(db.String(16), nullable=False)
     year = db.Column(db.Integer, nullable=False)
@@ -45,5 +46,5 @@ class User(db.Model, UserMixin):
         }
 
 
-    post = db.relationship("Posts", back_populates="user")
+    post = db.relationship("Post", back_populates="user")
     comment = db.relationship("Comment", back_populates="user")

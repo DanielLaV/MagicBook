@@ -6,8 +6,8 @@ from flask_wtf.csrf import generate_csrf
 from flask_login import LoginManager
 
 from .models import db, User
-from .api.user_routes import user_routes, post_routes, comment_routes
-from .api.auth_routes import auth_routes
+from .api import user_routes, auth_routes, post_routes, comment_routes
+
 
 from .seeds import seed_commands
 
