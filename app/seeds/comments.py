@@ -13,7 +13,7 @@ def seed_comments():
     c8 = Comment(content="Neville, that's LITERALLY impossible! I HAVE to see it!", user_id=15, post_id=4)
     c9 = Comment(content="Back off Pansy! Hannah is awesome. ", user_id=5, post_id=6)
     c10 = Comment(content="You're a terrible person!", user_id=17, post_id=6)
-    c11= Comment(content="lulz", user_id=1, post_id=7)
+    c11 = Comment(content="lulz", user_id=1, post_id=7)
     c12 = Comment(content="@malfoy he wont be laffing after what we haveplanned for tomorow hahaah", user_id=8, post_id=7)
     c13 = Comment(content="@crabby Why would you write that on here, you COMPLETE MORON", user_id=7, post_id=7)
     c14 = Comment(content="whatd i do?", user_id=8, post_id=7)
