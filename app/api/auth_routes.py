@@ -64,12 +64,12 @@ def sign_up():
         user = User(
             username=form.data['username'],
             email=form.data['email'],
-            password=form.data['password']
-            first_name=form.data['first_name']
-            last_name=form.data['last_name']
-            house=form.data['house']
-            year=form.data['year']
-            bio=form.data['bio']
+            password=form.data['password'],
+            first_name=form.data['first_name'],
+            last_name=form.data['last_name'],
+            house=form.data['house'],
+            year=form.data['year'],
+            bio=form.data['bio'],
             pic=form.data['pic']
         )
         db.session.add(user)

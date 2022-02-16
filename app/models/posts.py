@@ -7,7 +7,7 @@ class Post(db.Model, UserMixin):
 
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(512), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
 
     def to_dict(self):
@@ -18,5 +18,5 @@ class Post(db.Model, UserMixin):
         }
 
 
-    user = db.relationship("User", back_populates="post")
-    comment = db.relationship("Comment", back_populates="post", cascade="all, delete")
+    user = db.relationship('User', back_populates='post')
+    comment = db.relationship('Comment', back_populates='post', cascade='all, delete')
