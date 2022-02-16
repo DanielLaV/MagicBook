@@ -8,7 +8,7 @@ def seed_users():
     ron = User(first_name='Ronald', last_name='Weasley', username='ronnie', email='rweasley@hogwarts.edu', password='password', house='Gryffindor', year=3, bio='Chudley Cannons 4 lyfe', pic='')
     dean = User(first_name='Dean', last_name='Thomas', username='deano', email='dean@hogwarts.edu', password='password', house='Gryffindor', year=3, bio='I wish I knew my dad. :(', pic='')
     neville = User(first_name='Neville', last_name='Longbottom', username='longbutt', email='neville@hogwarts.edu', password='password', house='Gryffindor', year=3, bio='You think Harry has it bad? Check me out', pic='')
-    parvati = User(first_name='Parvati', last_name='Patil', username='bestPatil', email='padma@hogwarts.edu', password='password', house='Gryffindor', year=3, bio="Nothing comes between me and my twin sister.", pic='')
+    parvati = User(first_name='Parvati', last_name='Patil', username='bestPatil', email='parvati@hogwarts.edu', password='password', house='Gryffindor', year=3, bio="Nothing comes between me and my twin sister.", pic='')
     draco = User(first_name='Draco', last_name='Malfoy', username='malfoy', email='draco@hogwarts.edu', password='password', house='Slytherin', year=3, bio="I will be the greatest Malfoy yet", pic='')
     crabbe = User(first_name='Vincent', last_name='Crabbe', username='crabby', email='vincent@hogwarts.edu', password='password', house='Slytherin', year=3, bio='Yous best not hurt da boss', pic='')
     goyle = User(first_name='Gregory', last_name='Goyle', username='vinnie', email='gregory@hogwarts.edu', password='password', house='Slytherin', year=3, bio='Yous best not hurt da boss', pic='')
@@ -28,33 +28,27 @@ def seed_users():
 
 
 
-
-
-
-
-
-
     db.session.add(demo)
-    # db.session.add(hermione)
-    # db.session.add(ron)
-    # db.session.add(dean)
-    # db.session.add(neville)
-    # db.session.add(parvati)
-    # db.session.add(draco)
-    # db.session.add(crabbe)
-    # db.session.add(goyle)
-    # db.session.add(zabini)
-    # db.session.add(pansy)
-    # db.session.add(daphne)
-    # db.session.add(tracey)
-    # db.session.add(justin)
-    # db.session.add(hannah)
-    # db.session.add(smith)
-    # db.session.add(bones)
-    # db.session.add(boot)
-    # db.session.add(tony)
-    # db.session.add(mandy)
-    # db.session.add(padma)
+    db.session.add(hermione)
+    db.session.add(ron)
+    db.session.add(dean)
+    db.session.add(neville)
+    db.session.add(parvati)
+    db.session.add(draco)
+    db.session.add(crabbe)
+    db.session.add(goyle)
+    db.session.add(zabini)
+    db.session.add(pansy)
+    db.session.add(daphne)
+    db.session.add(tracey)
+    db.session.add(justin)
+    db.session.add(hannah)
+    db.session.add(smith)
+    db.session.add(bones)
+    db.session.add(boot)
+    db.session.add(tony)
+    db.session.add(mandy)
+    db.session.add(padma)
 
     db.session.commit()
 
