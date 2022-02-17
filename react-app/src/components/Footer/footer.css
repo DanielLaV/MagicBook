@@ -1,0 +1,88 @@
+/* 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 25px;
+
+} */
+
+footer {
+  background-color: white;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+
+
+}
+
+.footerProfiles{
+  display: flex;
+  align-items: center;
+
+}
+
+.gitlogo{
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 3px;
+  display: flex;
+}
+
+.gitlogo:hover{
+  transform: scale(1.3); 
+}
+
+
+.linkedinlogo {
+  height: 12px;
+  border-radius: 10%;
+  display: flex;
+}
+
+.linkedinlogo:hover{
+  transform: scale(1.2); 
+}
+
+
+#footer_names:hover + .linkedinlink {
+  transform: scale(1.2);
+}
+
+.linkedinlink:hover ~ #footer_names {
+  color: #27A9E1;
+  
+}
+
+#footer_names {
+  font-size: 12px;
+  margin-right: 3px;
+  text-decoration: none;
+  color: darkslategray;
+
+  
+}
+#footer_names:visited{
+  color: darkslategray;
+}
+
+
+#footer_names:hover{
+  cursor: pointer;
+  color: #27A9E1;
+}
