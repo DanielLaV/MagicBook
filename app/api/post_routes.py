@@ -78,9 +78,9 @@ def single_post(id):
 
             db.session.add(new_post)
             db.session.commit()
-            return new_post.to_dict()
         elif form.errors:
             return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+    return new_post.to_dict()
 
 
 @post_routes.route('/<int:id>', methods=['DELETE'])

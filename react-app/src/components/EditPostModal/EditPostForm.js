@@ -5,11 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function EditPostForm({ setShowModal, post }) {
 	const dispatch = useDispatch();
-	const [ title, setTitle ] = useState(post.title);
-	const [ description, setDescription ] = useState(post.description);
+	const [ content, setContent ] = useState(post.content);
 	const [ errors, setErrors ] = useState([]);
 	const user_id = useSelector((state) => state.session.user.id);
     const [success, setSuccess] = useState("");
+    console.log('===========POST', post)
+
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -17,8 +18,7 @@ function EditPostForm({ setShowModal, post }) {
 		setErrors([]);
 		const newPost = {
 			id: post.id,
-			title,
-			description,
+			content,
 			user_id
 		};
 
@@ -41,21 +41,15 @@ function EditPostForm({ setShowModal, post }) {
 		<div className="form-container">
 			<form className="form" onSubmit={handleSubmit}>
 				<ul>{errors.map((error, idx) => <li key={idx}>{error}</li>)}</ul>
-				<label className="input">Title</label>
-				<input
-					type="text"
-					value={title}
-					onChange={(e) => setTitle(e.target.value)}
-					required
-					className="input"
-				/>
 
-				<label className="input">Description</label>
-				<input
+				<label className="input">Post</label>
+				<textarea
 					type="text"
-					value={description}
+					cols="80"
+					rows="15"
+					value={content}
 					className="input"
-					onChange={(e) => setDescription(e.target.value)}
+					onChange={(e) => setContent(e.target.value)}
 				/>
 
 				<div className="form-button-container">
