@@ -4,7 +4,7 @@ import * as postActions from "../../store/posts";
 import { useDispatch, useSelector } from 'react-redux';
 import Post from './Post.js';
 import AddPostFormModal from '../AddPostModal';
-import { NavLink } from 'react-router-dom';
+
 
 
 function PostsPage() {
