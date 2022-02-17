@@ -17,7 +17,7 @@ class User(db.Model, UserMixin):
     house = db.Column(db.String(16), nullable=False)
     year = db.Column(db.Integer, nullable=False)
     bio = db.Column(db.String(256))
-    pic = db.Column(db.String(64))
+    pic = db.Column(db.String(128))
     created_at = db.Column(db.DateTime, server_default=func.now())
     updated_at = db.Column(db.DateTime, onupdate=func.now())
 
