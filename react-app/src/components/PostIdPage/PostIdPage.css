@@ -19,7 +19,7 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.cardPageContainer {
+.commentPageContainer {
   display: flex;
   flex-direction: row;
   height: 79.5vh;
@@ -44,6 +44,6 @@
     font-style: italic;
 }
 
-.addCardOrTag {
+.addCommentOrTag {
   z-index: 0;
 } */

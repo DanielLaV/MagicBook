@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import * as postActions from '../../store/posts';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import AddCardFormModal from '../AddCardFormModal';
-// import CardBrowser from '../CardsBrowser';
+// import AddCommentFormModal from '../AddCommentFormModal';
+// import CommentBrowser from '../CommentsBrowser';
 import EditPostFormModal from '../EditPostModal';
 import DeletePostFormModal from '../DeletePostModal';
 
