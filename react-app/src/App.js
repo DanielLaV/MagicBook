@@ -10,13 +10,15 @@ import UsersList from './components/UsersList';
 import User from './components/User';
 import { authenticate } from './store/session';
 import Footer from './components/Footer';
+import PostsPage from './components/PostsPage';
+import PostIdPage from './components/PostIdPage';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    (async() => {
+    (async () => {
       await dispatch(authenticate());
       setLoaded(true);
     })();
@@ -39,8 +41,14 @@ function App() {
         <Route path='/sign-up' exact={true}>
           <SignUpForm />
         </Route>
+        <ProtectedRoute path='/posts' exact={true} >
+          <PostsPage />
+        </ProtectedRoute>
+        <ProtectedRoute path='/posts/:postId' exact={true} >
+          <PostIdPage />
+        </ProtectedRoute>
         <ProtectedRoute path='/users' exact={true} >
-          <UsersList/>
+          <UsersList />
         </ProtectedRoute>
         <ProtectedRoute path='/users/:userId' exact={true} >
           <User />
