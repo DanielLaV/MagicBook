@@ -105,6 +105,7 @@ const initialState = {};
 const postsReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_POSTS: {
+            console.log('------- in reducer')
             const newState = {};
             action.payload.forEach((post) => {
                 newState[post.id] = post;

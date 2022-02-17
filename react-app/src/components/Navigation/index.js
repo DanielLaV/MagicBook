@@ -18,7 +18,6 @@ const NavBar = () => {
       <div className="navLinkContainer">
         <NavLink to='/' exact={true} activeClassName='userLink' className='navLink'>Home</NavLink>
         <NavLink to='/posts' activeClassName='userLink' className='navLink'>Browse Posts</NavLink>
-        <NavLink to={`/user-study-posts/${user.id}`} activeClassName='userLink' className='navLink'>Study List</NavLink>
         <LogoutButton />
       </div>
     );
