@@ -2,14 +2,12 @@ import { useState } from 'react';
 import * as postActions from '../../store/posts';
 import { useDispatch, useSelector } from 'react-redux';
 
-function AddPostForm({ setShowModal }) {
+function AddPostForm() {
     const dispatch = useDispatch();
     const user_id = useSelector(state => state.session.user.id);
     const [content, setContent] = useState('');
     const [errors, setErrors] = useState([]);
     const [success, setSuccess] = useState("");
-
-
 
     const handleSubmit = async e => {
         e.preventDefault();
@@ -27,9 +25,8 @@ function AddPostForm({ setShowModal }) {
                         setErrors(response.errors)
                         return
                     }
-                    setSuccess("Post added!");
                     setTimeout(() => {
-                        setShowModal(false);
+                        setSuccess("Post added!");
                     }, 800);
                 }
             );
@@ -45,15 +42,15 @@ function AddPostForm({ setShowModal }) {
                     ))}
                 </ul>
                 <label className='form'>
-                    <h1>Add Post</h1>
+                    <h1>New Post</h1>
                 </label>
                 <label>
                 </label>
-                <input
+                <textarea
                     type='text'
                     value={content}
                     onChange={e => setContent(e.target.value)}
-                    placeholder='Your post here'
+                    placeholder="What's on your mind?"
                     className='input'
                 />
 

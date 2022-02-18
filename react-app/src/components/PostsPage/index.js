@@ -1,9 +1,10 @@
 import './PostsPage.css';
 import { useEffect } from 'react';
 import * as postActions from "../../store/posts";
+import * as commentActions from "../../store/comments";
 import { useDispatch, useSelector } from 'react-redux';
 import Post from './Post.js';
-import AddPostFormModal from '../AddPostModal';
+import AddPostForm from '../AddPostForm';
 
 
 
@@ -14,24 +15,25 @@ function PostsPage() {
 
     useEffect(() => {
         dispatch(postActions.getPosts());
+        dispatch(commentActions.getComments());
     }, [dispatch, userId]);
 
     return (
         <div className='browsePageContainer'>
             <div className="browsePosts">
-                <div className="browsePostsContainer">
-                    <h1 className="browsePostsTitle">Your Feed</h1>
+                <div className='addPostButtonContainer'>
+                    <AddPostForm />
+                </div>
+                <div className="postsTitleContainer">
+                    <h1 className="postsTitle">Your Feed</h1>
                 </div>
                 <div className='postsDisplay'>
                     <div className='allPosts'>
                         {posts?.map(post =>
                             <div className="eachPost" key={post.id}>
-                         		<Post post={post} />
+                                <Post post={post} />
                             </div>)}
                     </div>
-                </div>
-                <div className='addPostButtonContainer'>
-                    <AddPostFormModal />
                 </div>
             </div>
         </div>

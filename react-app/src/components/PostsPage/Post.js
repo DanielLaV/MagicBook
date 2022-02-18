@@ -2,7 +2,7 @@ import './PostsPage.css'
 import { useSelector } from 'react-redux';
 import DeletePostModal from '../DeletePostModal';
 import EditPostFormModal from '../EditPostModal';
-import CommentListModal from '../CommentModal';
+import CommentList from '../CommentList';
 
 
 function Post({ post }) {
@@ -21,7 +21,7 @@ function Post({ post }) {
             </div>
             }
             <div>
-                <CommentListModal post={post} />
+                <CommentList post={post} />
             </div>
         </div>
     )

@@ -30,7 +30,6 @@ export const getPosts = () => async (dispatch) => {
     const res = await fetch('/api/posts/');
     const data = await res.json();
     if (res.ok) {
-        console.log('============post fetch', res)
         dispatch(loadPosts(data.posts));
         return res;
     }
@@ -107,7 +106,6 @@ const initialState = {};
 const postsReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_POSTS: {
-            console.log('------- in reducer')
             const newState = {};
             action.payload.forEach((post) => {
                 newState[post.id] = post;
