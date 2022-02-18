@@ -22,8 +22,8 @@ function Comment({ comment }) {
                 </div>
                 {showButtons &&
                     <div className='crudButtons'>
-                        <EditCommentFormModal comment={comment} />
                         <DeleteCommentFormModal comment={comment} />
+                        <EditCommentFormModal comment={comment} />
                     </div>
                 }
 

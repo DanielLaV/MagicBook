@@ -52,13 +52,15 @@ def one_comment(id):
     GET requests return a single comment
     PUT requests edit a single comment
     """
+    print('===============inside put')
     one_comment = Comment.query.get(id)
     if request.method == 'PUT':
         form = CommentForm()
         form['csrf_token'].data = request.cookies['csrf_token']
 
         if form.validate_on_submit():
-            content = form.data['front']
+            content = form.data['content']
+            print('===============inside put2')
 
             one_comment.content = content
 
