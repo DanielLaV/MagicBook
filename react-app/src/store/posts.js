@@ -30,9 +30,11 @@ export const getPosts = () => async (dispatch) => {
     const res = await fetch('/api/posts/');
     const data = await res.json();
     if (res.ok) {
+        console.log('============post fetch', res)
         dispatch(loadPosts(data.posts));
         return res;
     }
+    else return "Error"
 }
 
 export const getOnePost = (id) => async (dispatch) => {

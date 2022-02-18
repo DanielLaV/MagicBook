@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
-import CommentBody from './CommentBody';
-import Comment from "../Comment";
+import CommentList from './CommentList';
 import './CommentModal.css'
 
-function CommentBodyModal({comment}) {
+function CommentListModal({ post }) {
     const [showModal, setShowModal] = useState(false);
 
     return (
-        <>
-            <div className='eachComment' onClick={() => setShowModal(true)}><div className='texter'><Comment comment={comment} /></div></div>
+        <div className='commentModalWrapper' onClick={() => setShowModal(true)}>
+            <button className='seeComments'>Comments</button>
             {showModal && (
-                <Modal className="commentP" onClose={() => setShowModal(false)}>
-                    <CommentBody setShowModal={setShowModal} commentId={comment.id}/>
+                <Modal className="commentModal" onClose={() => setShowModal(false)}>
+                    <CommentList setShowModal={setShowModal} post={post} />
                 </Modal>
             )}
-        </>
+        </div>
     )
 }
 
-export default CommentBodyModal;
+export default CommentListModal;

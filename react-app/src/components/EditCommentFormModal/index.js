@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import EditCommentForm from './EditCommentForm';
 import '../Comment/comment.css'
-import Feather from '../../assets/feather2.png'
+import Feather from '../../assets/feather.png'
 
 function EditCommentFormModal({comment}) {
   const [showModal, setShowModal] = useState(false);

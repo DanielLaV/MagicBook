@@ -45,8 +45,6 @@ function EditPostForm({ setShowModal, post }) {
 				<label className="input">Post</label>
 				<textarea
 					type="text"
-					cols="80"
-					rows="15"
 					value={content}
 					className="input"
 					onChange={(e) => setContent(e.target.value)}

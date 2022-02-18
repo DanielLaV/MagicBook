@@ -2,6 +2,10 @@ body {
   color: white;
 }
 
+.addPostButtonContainer {
+  margin: 30px;
+}
+
 /* body{
     background-color: black;
   }

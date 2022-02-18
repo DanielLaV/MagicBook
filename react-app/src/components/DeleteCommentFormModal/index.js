@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import DeleteCommentForm from './DeleteCommentForm';
 import '../Comment/comment.css'
-import Cauldron from '../../assets/cauldron.png'
+import Cauldron from '../../assets/cauldron.svg'
 
 function DeleteCommentFormModal({comment}) {
   const [showModal, setShowModal] = useState(false);
