@@ -8,6 +8,7 @@ nav {
     padding-top: 17.2%;  /* (img-height / img-width * container-width) */
                          /* (853 / 1280 * 100) */
     padding-bottom: 50px;
+    max-width: 80%;
 }
 
 .navLinkContainer {
@@ -22,4 +23,8 @@ nav {
 .unauthNavLinks {
     display: flex;
     justify-content: space-around;
+}
+
+.RightSideNav {
+    justify-self: center;
 }
