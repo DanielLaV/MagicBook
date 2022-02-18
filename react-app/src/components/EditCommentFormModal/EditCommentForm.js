@@ -5,7 +5,7 @@ import * as commentActions from "../../store/comments";
 
 function EditCommentForm({ setShowModal, comment }) {
   const dispatch = useDispatch();
-  const { deckId } = useParams();
+  const { postId } = useParams();
   const [front, setFront] = useState(comment.front);
   const [back, setBack] = useState(comment.back);
   const [errors, setErrors] = useState([]);
@@ -21,7 +21,7 @@ function EditCommentForm({ setShowModal, comment }) {
     const payload = {
       front,
       back,
-      deck_id: +deckId,
+      post_id: +postId,
       commentId: comment.id
     }
     return dispatch(commentActions.editComment(payload))

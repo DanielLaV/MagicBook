@@ -7,11 +7,11 @@ import DeleteCommentFormModal from "../DeleteCommentFormModal";
 
 
 const CommentBody = ({ setShowModal, commentId }) => {
-    const { deckId } = useParams();
+    const { postId } = useParams();
     const dispatch = useDispatch();
     const user = useSelector(state => state.session.user)
     const comment = useSelector(state => state.comments[commentId]);
-    const deck = useSelector(state => state.decks[deckId]);
+    const post = useSelector(state => state.posts[postId]);
 
     useEffect(() => {
         dispatch(commentActions.getOneComment(commentId));
@@ -27,7 +27,7 @@ const CommentBody = ({ setShowModal, commentId }) => {
                 onClick={(e) => setShowModal(false)} className="form-button">
                 Close
             </button>
-            {(user.id === deck.user_id) && modals}
+            {(user.id === post.user_id) && modals}
         </div>)
 
     return (

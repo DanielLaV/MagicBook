@@ -6,9 +6,9 @@ import * as commentActions from "../../store/comments";
 function DeleteCommentForm({ setShowModal, comment }) {
     const dispatch = useDispatch();
 
-    const { deckId } = useParams();
+    const { postId } = useParams();
     const currUserId = useSelector(state => state.session.user.id);
-    const currUserDeckId = useSelector(state => state.decks[deckId].user_id);
+    const currUserPostId = useSelector(state => state.posts[postId].user_id);
     const [success, setSuccess] = useState("");
     const [errors, setErrors] = useState([]);
 
@@ -16,10 +16,10 @@ function DeleteCommentForm({ setShowModal, comment }) {
         e.preventDefault();
         setErrors([]);
         const payload = {
-            deck_id: deckId,
+            post_id: postId,
             comment_id: comment.id,
             curr_user_id: currUserId,
-            deck_user_id: currUserDeckId,
+            post_user_id: currUserPostId,
         }
         return dispatch(commentActions.deleteComment(payload))
             .then(

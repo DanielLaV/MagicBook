@@ -6,7 +6,7 @@ import './AddCommentForm.css';
 
 function AddCommentForm({ payload }) {
   const dispatch = useDispatch();
-  const { deckId } = useParams();
+  const { postId } = useParams();
   const setShowModal = payload
   const [front, setFront] = useState("");
   const [back, setBack] = useState("");
@@ -20,7 +20,7 @@ function AddCommentForm({ payload }) {
     const payload = {
       front,
       back,
-      deck_id: +deckId
+      post_id: +postId
     }
     return dispatch(commentActions.createComment(payload))
       .then(
