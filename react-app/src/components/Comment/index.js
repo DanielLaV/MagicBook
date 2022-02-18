@@ -3,16 +3,14 @@ import { useSelector } from 'react-redux';
 
 
 function Comment({ comment }) {
-    // const commenter = useSelector(state => Object.values(state?.session).filter(comment => {
-    //     return comment.post_id === post.id;
-    // }));
+    const commenter = comment.user.username;
 
     if (comment) {
         console.log('====== inside COMMENT', comment)
         return (
             <div className='commentWrapper'>
                 <div className='commentOwner'>
-                    {comment.username}
+                    {commenter}
                 </div>
                 <div className="commentContent">
                     {comment.content}
