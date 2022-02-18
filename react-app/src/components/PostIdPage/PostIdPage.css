@@ -4,7 +4,7 @@
   margin: 10px 0px;
 }
 
-.deckIdPage {
+.postIdPage {
   margin: 25px;
   width: 100%;
   border-radius: 5px;
@@ -19,13 +19,13 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.cardPageContainer {
+.commentPageContainer {
   display: flex;
   flex-direction: row;
   height: 79.5vh;
 }
 
-.deckNameContainer {
+.postNameContainer {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -34,16 +34,16 @@
   height: 20%;
 }
 
-.deck-title {
+.post-title {
     margin: 20px 0px 6px 0px;
 
 }
 
-.deck-description {
+.post-description {
     margin: -3px 0px -6px 0px;
     font-style: italic;
 }
 
-.addCardOrTag {
+.addCommentOrTag {
   z-index: 0;
 } */

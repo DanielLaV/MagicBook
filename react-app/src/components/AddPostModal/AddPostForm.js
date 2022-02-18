@@ -38,14 +38,14 @@ function AddPostForm({ setShowModal }) {
     return (
         <div className="form-container">
             <form className='form' onSubmit={handleSubmit}>
-            <h2 style={{color:"green", marginBottom:"-20px"}}>{success}</h2>
+                <h2 style={{ color: "green", marginBottom: "-20px" }}>{success}</h2>
                 <ul>
                     {errors.map((error, idx) => (
                         <li key={idx}>{error}</li>
                     ))}
                 </ul>
                 <label className='form'>
-                <h1>Add Post</h1>
+                    <h1>Add Post</h1>
                 </label>
                 <label>
                 </label>
