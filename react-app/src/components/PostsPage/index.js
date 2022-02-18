@@ -1,6 +1,7 @@
 import './PostsPage.css';
 import { useEffect } from 'react';
 import * as postActions from "../../store/posts";
+import * as commentActions from "../../store/comments";
 import { useDispatch, useSelector } from 'react-redux';
 import Post from './Post.js';
 import AddPostForm from '../AddPostForm';
@@ -14,6 +15,7 @@ function PostsPage() {
 
     useEffect(() => {
         dispatch(postActions.getPosts());
+        dispatch(commentActions.getComments());
     }, [dispatch, userId]);
 
     return (

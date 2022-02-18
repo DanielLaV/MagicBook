@@ -1,7 +1,7 @@
-const LOAD = 'studybuddy/comment/LOAD'
-const ADD_COMMENT = 'studybuddy/comment/ADD_COMMENT'
-const DELETE_COMMENT = 'studybuddy/comment/DELETE_COMMENT'
-const DELETE_POST_COMMENTS = 'studybuddy/comments/DELETE_POST_COMMENTS'
+const LOAD = 'magicbook/comment/LOAD'
+const ADD_COMMENT = 'magicbook/comment/ADD_COMMENT'
+const DELETE_COMMENT = 'magicbook/comment/DELETE_COMMENT'
+const DELETE_POST_COMMENTS = 'magicbook/comments/DELETE_POST_COMMENTS'
 
 const load = comments => ({
     type: LOAD,
@@ -35,6 +35,7 @@ export const createComment = (payload) => async (dispatch) => {
 
 
 export const getPostComments = (postId) => async (dispatch) => {
+    console.log("===== getPostComments")
     const response = await fetch(`/api/posts/${postId}/comments/`, {
         headers: { "Content-Type": "application/json" }
     });
@@ -46,6 +47,7 @@ export const getPostComments = (postId) => async (dispatch) => {
 }
 
 export const getComments = () => async (dispatch) => {
+    console.log("===== getComments")
     const response = await fetch(`/api/comments`, {
         headers: { "Content-Type": "application/json" }
     });

@@ -1,6 +1,7 @@
 /* TODO Add site wide styles */
 body {
     background-color: black;
+    margin-bottom: 40px;
 }
 
 .feather {

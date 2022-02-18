@@ -46,7 +46,7 @@ function AddPostForm() {
                 </label>
                 <label>
                 </label>
-                <input
+                <textarea
                     type='text'
                     value={content}
                     onChange={e => setContent(e.target.value)}
