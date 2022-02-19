@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import EditPostForm from './EditPostForm';
 import './EditPostForm.css';
-import Feather from '../../assets/feather.png'
+import Feather from '../../assets/feather.png';
 
 
 

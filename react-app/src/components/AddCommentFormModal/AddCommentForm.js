@@ -4,10 +4,9 @@ import * as commentActions from "../../store/comments";
 import { useParams } from "react-router-dom";
 import './AddCommentForm.css';
 
-function AddCommentForm({ payload }) {
+function AddCommentForm({ payload, post }) {
   const dispatch = useDispatch();
   const user_id = useSelector(state => state.session.user.id);
-  const { postId } = useParams();
   const setShowModal = payload
   const [content, setContent] = useState("");
   const [errors, setErrors] = useState([]);
@@ -21,7 +20,7 @@ function AddCommentForm({ payload }) {
     const payload = {
       content,
       user_id,
-      post_id: +postId
+      post_id: +post.id
     }
     return dispatch(commentActions.createComment(payload))
       .then(

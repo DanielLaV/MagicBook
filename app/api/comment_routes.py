@@ -58,7 +58,7 @@ def one_comment(id):
         form['csrf_token'].data = request.cookies['csrf_token']
 
         if form.validate_on_submit():
-            content = form.data['front']
+            content = form.data['content']
 
             one_comment.content = content
 
@@ -74,10 +74,12 @@ def delete_comment(id):
     """
     Deletes a single comment with the id of 'id'
     """
+    print('======== ONE')
     form = DeleteCommentForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
     if form.validate_on_submit():
+        print('======== TWO')
         comment = Comment.query.get(id)
         db.session.delete(comment)
         db.session.commit()
