@@ -55,7 +55,7 @@ function EditCommentForm({ setShowModal, comment }) {
           </ul>
           <form onSubmit={handleSubmit} className="form">
             <div className="text-container">
-              <textarea
+              <input
                 id="content"
                 type="text"
                 value={content}

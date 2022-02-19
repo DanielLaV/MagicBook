@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import DeletePostModal from '../DeletePostModal';
 import EditPostFormModal from '../EditPostModal';
 import CommentList from '../CommentList';
-import AddCommentFormModal from '../AddCommentFormModal';
+import AddCommentForm from '../AddCommentForm';
 
 
 function Post({ post }) {
@@ -23,7 +23,7 @@ function Post({ post }) {
             }
             <div>
                 <CommentList post={post} />
-                <AddCommentFormModal post={post} />
+                <AddCommentForm post={post} />
             </div>
         </div>
     )
