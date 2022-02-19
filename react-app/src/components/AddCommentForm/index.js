@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as commentActions from "../../store/comments";
-import { useParams } from "react-router-dom";
 import './AddCommentForm.css';
 
-function AddCommentForm({ payload, post }) {
+function AddCommentForm({ post }) {
   const dispatch = useDispatch();
   const user_id = useSelector(state => state.session.user.id);
-  const setShowModal = payload
   const [content, setContent] = useState("");
   const [errors, setErrors] = useState([]);
   const [success, setSuccess] = useState("");
@@ -29,10 +27,11 @@ function AddCommentForm({ payload, post }) {
             setErrors(response.errors)
             return
           }
-          setSuccess("Be kind in your comments!");
+          setContent("");
+          setSuccess("Be kind!");
           setTimeout(() => {
-            setShowModal(false);
-          }, 850);
+            setSuccess("");
+          }, 1000);
         }
       );
   };
@@ -53,7 +52,7 @@ function AddCommentForm({ payload, post }) {
       </ul>
       <form className='form' onSubmit={handleSubmit}>
         <div className="text-container">
-          <textarea
+          <input
             type="text"
             value={content}
             onChange={(e) => setContent(e.target.value)}
@@ -61,22 +60,14 @@ function AddCommentForm({ payload, post }) {
             placeholder="Write a comment..."
             className="input"
           />
-        </div>
-        <div className="form-button-container">
           <button
             type="submit"
             className="form-button">
             Add Comment
           </button>
-          <button
-            type="button"
-            className="form-button"
-            onClick={() => {
-              setShowModal(false);
-              setContent("");
-            }}>
-            Cancel
-          </button>
+
+        </div>
+        <div className="form-button-container">
         </div>
       </form>
     </div>
