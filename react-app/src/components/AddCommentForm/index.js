@@ -62,8 +62,8 @@ function AddCommentForm({ post }) {
           />
           <button
             type="submit"
-            className="form-button">
-            Add Comment
+            className="form-button"
+            hidden>
           </button>
 
         </div>
