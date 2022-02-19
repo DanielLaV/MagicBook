@@ -6,9 +6,8 @@ import * as commentActions from "../../store/comments";
 function DeleteCommentForm({ setShowModal, comment }) {
     const dispatch = useDispatch();
 
-    const { postId } = useParams();
-    const currUserId = useSelector(state => state.session.user.id);
-    const currUserPostId = useSelector(state => state.posts[postId].user_id);
+    const currUserId = useSelector(state => state.session?.user.id);
+    const commentUserId = comment.user.id;
     const [success, setSuccess] = useState("");
     const [errors, setErrors] = useState([]);
 
@@ -16,10 +15,9 @@ function DeleteCommentForm({ setShowModal, comment }) {
         e.preventDefault();
         setErrors([]);
         const payload = {
-            post_id: postId,
             comment_id: comment.id,
             curr_user_id: currUserId,
-            post_user_id: currUserPostId,
+            comment_user_id: commentUserId,
         }
         return dispatch(commentActions.deleteComment(payload))
             .then(
