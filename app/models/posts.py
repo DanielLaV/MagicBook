@@ -18,7 +18,8 @@ class Post(db.Model, UserMixin):
         return {
             'id': self.id,
             'content': self.content,
-            'user_id': self.user_id
+            'user_id': self.user_id,
+            'user': self.user.to_dict()
         }
 
 

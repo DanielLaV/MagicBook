@@ -1,7 +1,15 @@
-body {
-  color: white;
+.allPosts {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 10px solid black;
 }
 
 .addPostButtonContainer {
   margin: 30px;
+}
+
+.postUserPic {
+  width: 5vw;
+
 }

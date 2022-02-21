@@ -8,13 +8,14 @@ import AddCommentForm from '../AddCommentForm';
 
 function Post({ post }) {
 
-    const user = useSelector(state => state.session.user.id);
+    const user = useSelector(state => state.session.user);
     const postOwner = post.user_id;
-    const isOwner = +postOwner === +user;
+    const isOwner = +postOwner === +user.id;
 
 
     return (
         <div className="singlePost">
+            <img className='postUserPic' src={user.pic}></img>
             <p className='content'>{post.content}</p>
             {isOwner && <div className='form-buttons'>
                 <DeletePostModal post={post} />
