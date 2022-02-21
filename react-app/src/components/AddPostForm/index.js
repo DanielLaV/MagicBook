@@ -1,3 +1,4 @@
+import './AddPostForm.css';
 import { useState } from 'react';
 import * as postActions from '../../store/posts';
 import { useDispatch, useSelector } from 'react-redux';
@@ -34,7 +35,7 @@ function AddPostForm() {
 
     return (
         <div className="form-container">
-            <form className='form' onSubmit={handleSubmit}>
+            <form className='addPostForm' onSubmit={handleSubmit}>
                 <h2 style={{ color: "green", marginBottom: "-20px" }}>{success}</h2>
                 <ul>
                     {errors.map((error, idx) => (

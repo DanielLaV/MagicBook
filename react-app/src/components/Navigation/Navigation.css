@@ -1,14 +1,13 @@
-nav {
+.NavigationBar {
     background-image: url("../../assets/hogwarts-banner.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 0;
     padding-top: 17.2%;  /* (img-height / img-width * container-width) */
                          /* (853 / 1280 * 100) */
     padding-bottom: 50px;
     max-width: 80%;
+    max-height: 10vh;
 }
 
 .navLinkContainer {

@@ -1,7 +1,10 @@
-/* TODO Add site wide styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     /* background: linear-gradient(.25turn,#AE0001 25%, #FFED86 25% 50%, #2A623D 50% 75%, #222F5B 75% 100%); */
-    background: linear-gradient(.25turn,#AE0001, #FFED86, #2A623D, #222F5B);
+    background: linear-gradient(#AE0001, #FFED86, #2A623D, #222F5B);
     margin-bottom: 40px;
     display: flex;
     justify-content: center;

@@ -41,14 +41,6 @@ const NavBar = () => {
 
   return (
     <nav className="NavigationBar">
-      <div>
-        {/* <NavLink to='/'>
-          <img id="navLogo" src={Logo} alt="logo"></img>
-        </NavLink>
-        <NavLink to='/'>
-          <img id="navLogoText" src={LogoText} alt="logo"></img>
-        </NavLink> */}
-      </div>
       <div className="RightSideNav">
         {sessionLinks}
       </div>
