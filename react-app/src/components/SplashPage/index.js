@@ -20,6 +20,8 @@ const SplashPage = () => {
         <div>
             <div className="bgImageContainer">
                 <img className="bgImage" src={splash} alt="potion bottle with wand"></img>
+            </div>
+            <div className="userAuthContainer">
 
             </div>
         </div>
