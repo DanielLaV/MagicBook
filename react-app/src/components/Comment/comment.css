@@ -1,15 +1,15 @@
-.frontCommentDisplay {
+/* .frontCommentDisplay {
   justify-content: center;
   align-items: center;
   inline-size: 100px;
   overflow-wrap: break-word;
-}
+} */
 
-.postTitle {
+/* .postTitle {
   font-size: 14px;
   text-align: center;
 
-}
+} */
 
 .editDeleteButtons {
   position: absolute;

@@ -2,14 +2,40 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 10px solid black;
 }
 
-.addPostButtonContainer {
+/* .addPostButtonContainer {
   margin: 30px;
-}
+} */
 
 .postUserPic {
-  width: 5vw;
+  width: 4vw;
+  height: 4vh;
+  border: 2px solid red;
+  border-radius: 50%;
+  /* margin: 2%; */
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .postUserName {
+  margin-top: 3.5%;
+} */
+
+.postContent {
+  width: 80%;
+}
+
+.postContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 
 }
