@@ -1,8 +1,53 @@
 img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.rightHalf {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgImageContainer {
     width: 50%;
 }
 
+body {
+    margin: 0px;
+}
+
 .splashPage {
+    display: flex;
+    flex-direction: row;
     height: 100vh;
-    width: 100vw;
+}
+
+.userAuthHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+    padding: 10px;
+}
+
+.userAuthContainer {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 50vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.authButton {
+    border: none;
+    background-color: white;
+    font-size: larger;
+    color: #222F5B;
+    cursor: pointer;
 }
