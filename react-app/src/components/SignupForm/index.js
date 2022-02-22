@@ -71,7 +71,7 @@ const SignupForm = () => {
           <label></label>
           <input
             placeholder='Email'
-            type='text'
+            type='email'
             name='email'
             onChange={updateEmail}
             required={true}
