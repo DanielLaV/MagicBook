@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { login } from "../../store/session";
+import React, { useState } from "react";
 import splash from '../../assets/splash.jpeg';
 import './SplashPage.css'
 import LoginForm from '../LoginForm';
@@ -9,15 +7,8 @@ import SignupForm from '../SignupForm';
 
 const SplashPage = () => {
 
-    const dispatch = useDispatch();
     const [form, setForm] = useState('Login');
     let showLogin = form === 'Login';
-
-    const demoLogin = () => {
-        const email = 'chosenOne@hogwarts.edu';
-        const password = 'password';
-        return dispatch(login(email, password));
-    }
 
 
     const clickLogin = () => {

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Redirect, useHistory } from 'react-router-dom';
 import { login } from '../../store/session';
 import './LoginForm.css';
+
+
 
 const LoginForm = () => {
 	const history = useHistory();
@@ -23,6 +25,12 @@ const LoginForm = () => {
 		});
 	};
 
+	const demoLogin = () => {
+        const email = 'chosenOne@hogwarts.edu';
+        const password = 'password';
+        return dispatch(login(email, password));
+    }
+
 	const updateEmail = (e) => {
 		setEmail(e.target.value);
 	};
@@ -32,16 +40,16 @@ const LoginForm = () => {
 	};
 
 	if (user) {
-		return <Redirect to="/" />;
+		return <Redirect to="/posts" />;
 	}
 
 	return (
 		<div className="form-container">
-			<form className="form" onSubmit={onLogin}>
+			<form className="outerForm" onSubmit={onLogin}>
 				<div>
 					<div className="error-list">{errors[0]}</div>
 				</div>
-				<div className="loginForm">
+				<div className="innerForm">
 					<h1 className>Log In</h1>
 
 					<label htmlFor="email"> </label>
@@ -52,7 +60,8 @@ const LoginForm = () => {
 						value={email}
 						onChange={updateEmail}
 						className="input"
-					/>
+						id="firstInput"
+						/>
 					<label htmlFor="password" />
 					<input
 						placeholder="Password"
@@ -61,12 +70,14 @@ const LoginForm = () => {
 						value={password}
 						onChange={updatePassword}
 						className="input"
+						id='secondInput'
 					/>
 				</div>
 				<div className="form-button-container">
 					<button className="form-button" type="submit">
 						Login
 					</button>
+					<button className='form-button' onClick={demoLogin}>Demo</button>
 				</div>
 			</form>
 		</div>

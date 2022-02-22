@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 75%;
-    height: 50vh;
+    height: 45vh;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 12px 28px rgba(0,0,0,0.12);
@@ -50,4 +50,12 @@ body {
     font-size: larger;
     color: #222F5B;
     cursor: pointer;
+}
+
+.userAuth {
+    height: 100%;
+}
+
+.currForm {
+    height: 80%;
 }
