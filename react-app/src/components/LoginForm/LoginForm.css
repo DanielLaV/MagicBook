@@ -53,3 +53,7 @@
 .form-button:first-child {
   color: #2A623D;
 }
+
+.errorsList {
+  color: red;
+}

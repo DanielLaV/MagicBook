@@ -14,6 +14,7 @@ const removeUser = () => ({
 const initialState = { user: null };
 
 export const authenticate = () => async (dispatch) => {
+  console.log('in authenticate')
   const response = await fetch('/api/auth/', {
     headers: {
       'Content-Type': 'application/json'
@@ -24,12 +25,13 @@ export const authenticate = () => async (dispatch) => {
     if (data.errors) {
       return;
     }
-  
+
     dispatch(setUser(data));
   }
 }
 
 export const login = (email, password) => async (dispatch) => {
+  console.log('in login')
   const response = await fetch('/api/auth/login', {
     method: 'POST',
     headers: {
@@ -40,8 +42,8 @@ export const login = (email, password) => async (dispatch) => {
       password
     })
   });
-  
-  
+
+
   if (response.ok) {
     const data = await response.json();
     dispatch(setUser(data))
@@ -58,6 +60,7 @@ export const login = (email, password) => async (dispatch) => {
 }
 
 export const logout = () => async (dispatch) => {
+  console.log('in logout')
   const response = await fetch('/api/auth/logout', {
     headers: {
       'Content-Type': 'application/json',
@@ -71,6 +74,7 @@ export const logout = () => async (dispatch) => {
 
 
 export const signUp = (username, email, password) => async (dispatch) => {
+  console.log('hello?')
   const response = await fetch('/api/auth/signup', {
     method: 'POST',
     headers: {
@@ -82,17 +86,20 @@ export const signUp = (username, email, password) => async (dispatch) => {
       password,
     }),
   });
-  
+
   if (response.ok) {
     const data = await response.json();
+    console.log('===Data', data)
     dispatch(setUser(data))
     return null;
   } else if (response.status < 500) {
     const data = await response.json();
+    console.log('500?')
     if (data.errors) {
       return data.errors;
     }
   } else {
+    console.log('===not data')
     return ['An error occurred. Please try again.']
   }
 }

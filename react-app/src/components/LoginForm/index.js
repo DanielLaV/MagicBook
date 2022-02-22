@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Redirect, useHistory } from 'react-router-dom';
 import { login } from '../../store/session';
@@ -50,7 +50,7 @@ const LoginForm = () => {
 					<div className="error-list">{errors[0]}</div>
 				</div>
 				<div className="innerForm">
-					<h1 className>Log In</h1>
+					<h1>Log In</h1>
 
 					<label htmlFor="email"> </label>
 					<input

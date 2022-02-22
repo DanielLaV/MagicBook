@@ -4,7 +4,7 @@ import DeletePostModal from '../DeletePostModal';
 import EditPostFormModal from '../EditPostModal';
 import CommentList from '../CommentList';
 import AddCommentForm from '../AddCommentForm';
-import { useState } from 'react';
+
 
 
 function Post({ post }) {
@@ -20,7 +20,7 @@ function Post({ post }) {
     return (
         <div className="postContainer">
             <div className='postHeader'>
-                <img className='postUserPic' src={postOwner.pic}></img>
+                <img className='postUserPic' src={postOwner.pic} alt="User profile"></img>
                 <p className='postUserName'>{postOwner.username}</p>
             </div>
             <p className='postContent'>{post.content}</p>

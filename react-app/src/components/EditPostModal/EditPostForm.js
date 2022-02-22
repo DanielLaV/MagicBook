@@ -8,7 +8,7 @@ function EditPostForm({ setShowModal, post }) {
 	const [ content, setContent ] = useState(post.content);
 	const [ errors, setErrors ] = useState([]);
 	const user_id = useSelector((state) => state.session.user.id);
-    const [success, setSuccess] = useState("");
+    const [ , setSuccess] = useState("");
     console.log('===========POST', post)
 
 

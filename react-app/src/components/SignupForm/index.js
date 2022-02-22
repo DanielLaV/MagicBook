@@ -14,17 +14,28 @@ const SignupForm = () => {
   const user = useSelector(state => state.session.user);
   const dispatch = useDispatch();
 
+
   const onSignUp = async (e) => {
-    e.preventDefault();
+    console.log('broken button?')
     setErrors([])
-    return dispatch(signUp(username, email, password, repeatPassword))
+    if (password === repeatPassword) {
+      console.log('is this on?')
+      return dispatch(signUp(username, email, password, repeatPassword))
       .then((response) => {
         if (response?.errors) {
-          setErrors(response.errors)
-          return
-        }
-        else if (!response?.errors) history.push('/');
-      })
+            // console.log(errors)
+            setErrors(response.errors)
+            return
+          }
+          else if (!response?.errors) history.push('/');
+        })
+    }
+    else {
+      const errors = [];
+      errors.push("Passwords do not match.");
+      setErrors(errors);
+      return;
+    }
   };
 
   const updateUsername = (e) => {
@@ -52,7 +63,7 @@ const SignupForm = () => {
       <form className='outerForm' onSubmit={onSignUp}>
         <div>
           {errors.map((error, ind) => (
-            <div key={ind}>{error}</div>
+            <div className="errorsList" key={ind}>{error}</div>
           ))}
         </div>
         <div className='innerForm'>
