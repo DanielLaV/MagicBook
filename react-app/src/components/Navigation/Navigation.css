@@ -1,5 +1,6 @@
 .NavigationBar {
-    background-image: url("../../assets/castle.jpeg");
+    /* background-image: url("../../assets/castle.jpeg"); */
+    background-color: rgba(0,0,0,0.8);
     background-size:auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,10 +36,19 @@
 
 .navLinks {
     margin: 10vh;
-    background-color: white;
-    height: 5vh;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    background-color: rgba(230, 215, 175, 0.8)
+    /* background-color: rgba(230, 215, 175, 0.2); */
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: bolder;
+}
 
+button.navLinks {
+    background: none;
+    border: none;
+    bottom: 2vh;
+    font-size: 2.5vh;
 }
