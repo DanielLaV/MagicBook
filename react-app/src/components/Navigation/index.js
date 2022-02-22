@@ -16,7 +16,6 @@ const NavBar = () => {
   if (user) {
     sessionLinks = (
       <div className="navLinkContainer">
-        <NavLink to='/' exact={true} activeClassName='userLink' className='navLink'>Home</NavLink>
         <NavLink to='/posts' activeClassName='userLink' className='navLink'>Browse Posts</NavLink>
         <LogoutButton />
       </div>

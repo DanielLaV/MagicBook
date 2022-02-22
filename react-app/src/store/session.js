@@ -51,7 +51,7 @@ export const login = (email, password) => async (dispatch) => {
   } else if (response.status < 500) {
     const data = await response.json();
     if (data.errors) {
-      return data.errors;
+      return data;
     }
   } else {
     return ['An error occurred. Please try again.']
@@ -74,7 +74,6 @@ export const logout = () => async (dispatch) => {
 
 
 export const signUp = (payload) => async (dispatch) => {
-  console.log('in signup')
   const response = await fetch('/api/auth/signup', {
     method: 'POST',
     headers: {
@@ -85,17 +84,14 @@ export const signUp = (payload) => async (dispatch) => {
 
   if (response.ok) {
     const data = await response.json();
-    console.log('===Data', data)
     dispatch(setUser(data))
     return null;
   } else if (response.status < 500) {
     const data = await response.json();
-    console.log('500?', data)
     if (data.errors) {
-      return data.errors;
+      return data;
     }
   } else {
-    console.log('===not data')
     return ['An error occurred. Please try again.']
   }
 }

@@ -12,7 +12,7 @@ const SignupForm = () => {
   const [firstName, setFirst] = useState('');
   const [lastName, setLast] = useState('');
   const [house, setHouse] = useState('House');
-  const [year, setYear] = useState('');
+  const [year, setYear] = useState('1');
   const [bio, setBio] = useState('');
   const [pic, setPic] = useState('');
   const [password, setPassword] = useState('');
@@ -41,8 +41,8 @@ const SignupForm = () => {
       return dispatch(signUp(payload))
         .then((response) => {
 
-          if (response?.errors) {
-            console.log('errors line 27', errors)
+          if (response.errors) {
+            console.log('errors line 27', response.errors)
             setErrors(response.errors)
             return
           }
@@ -163,36 +163,6 @@ const SignupForm = () => {
             className='middleInput'
             id="bioTextarea"
           ></textarea>
-          <div className='houseYearContainer'>
-
-            <label></label>
-            <select
-              value={house}
-              type='text'
-              name='house'
-              onChange={updateHouse}
-              required={true}
-              className='middleInput'
-              id="houseSelect"
-            >
-              <option value="House" disabled>House</option>
-              <option value="Ravenclaw">Ravenclaw</option>
-              <option value="Slytherin">Slytherin</option>
-              <option value="Hufflepuff">Hufflepuff</option>
-              <option value="Gryffindor">Gryffindor</option>
-            </select>
-            <label className='yearLabel'>Year</label>
-            <input
-              type="number"
-              value={year}
-              className='middleInput'
-              onChange={updateYear}
-              min="1"
-              max="4"
-              id="year"
-            >
-            </input>
-          </div>
           <label></label>
           <input
             placeholder='Email'
@@ -223,6 +193,36 @@ const SignupForm = () => {
             required={true}
             className='lastInput'
           ></input>
+          <div className='houseYearContainer'>
+            <label></label>
+            <select
+              value={house}
+              type='text'
+              name='house'
+              onChange={updateHouse}
+              required={true}
+              className='middleInput'
+              id="houseSelect"
+            >
+              <option value="House" disabled>House</option>
+              <option value="Ravenclaw">Ravenclaw</option>
+              <option value="Slytherin">Slytherin</option>
+              <option value="Hufflepuff">Hufflepuff</option>
+              <option value="Gryffindor">Gryffindor</option>
+            </select>
+            <label className='yearLabel'>Year</label>
+            <input
+              type="number"
+              value={year}
+              className='middleInput'
+              onChange={updateYear}
+              default="1"
+              min="1"
+              max="4"
+              id="year"
+            >
+            </input>
+          </div>
         </div>
         <div className='form-button-container'>
           <button className='form-button' type='submit'>Sign Up</button>
