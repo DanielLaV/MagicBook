@@ -59,8 +59,8 @@ const LoginForm = () => {
 						type="text"
 						value={email}
 						onChange={updateEmail}
-						className="input"
-						id="firstInput"
+						className="firstInput"
+						required={true}
 						/>
 					<label htmlFor="password" />
 					<input
@@ -69,8 +69,8 @@ const LoginForm = () => {
 						type="password"
 						value={password}
 						onChange={updatePassword}
-						className="input"
-						id='secondInput'
+						required={true}
+						className="lastInput"
 					/>
 				</div>
 				<div className="form-button-container">

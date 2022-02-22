@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Redirect, useHistory } from 'react-router-dom';
 import { signUp } from '../../store/session';
 
+
 const SignupForm = () => {
   const history = useHistory();
   const [errors, setErrors] = useState([]);
@@ -48,14 +49,14 @@ const SignupForm = () => {
 
   return (
     <div className='form-container'>
-      <form className='form' onSubmit={onSignUp}>
+      <form className='outerForm' onSubmit={onSignUp}>
         <div>
           {errors.map((error, ind) => (
             <div key={ind}>{error}</div>
           ))}
         </div>
-        <div className='signUpForm'>
-        <h1>Sign Up</h1>
+        <div className='innerForm'>
+          <h1>Sign Up</h1>
 
           <label></label>
           <input
@@ -63,38 +64,41 @@ const SignupForm = () => {
             type='text'
             name='username'
             onChange={updateUsername}
+            required={true}
             value={username}
-            className='input'
+            className='firstInput'
           ></input>
           <label></label>
           <input
-          placeholder='Email'
+            placeholder='Email'
             type='text'
             name='email'
             onChange={updateEmail}
+            required={true}
             value={email}
-            className='input'
+            className='middleInput'
           ></input>
           <label></label>
           <input
-          placeholder='Password'
+            placeholder='Password'
             type='password'
             name='password'
             onChange={updatePassword}
+            required={true}
             value={password}
-            className='input'
+            className='middleInput'
           ></input>
           <label></label>
           <input
-          placeholder='Verify Password'
+            placeholder='Verify Password'
             type='password'
             name='repeat_password'
             onChange={updateRepeatPassword}
             value={repeatPassword}
             required={true}
-            className='input'
+            className='lastInput'
           ></input>
-          </div>
+        </div>
         <div className='form-button-container'>
           <button className='form-button' type='submit'>Sign Up</button>
         </div>

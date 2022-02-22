@@ -17,22 +17,27 @@
   align-items: center;
 }
 
-input {
+.innerForm input {
   padding: 10px;
   border: 1px solid #808080;
   width: 150%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-#firstInput {
+.firstInput {
   border-radius: 5px 5px 0 0;
 }
 
-#secondInput {
+.middleInput {
+  border-top: none;
+}
+
+.lastInput {
   border-top: none;
   margin-bottom: 10px;
   border-radius: 0 0 5px 5px;
-
 }
+
 
 .form-button {
   margin: 10px;
