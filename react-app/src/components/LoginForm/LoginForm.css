@@ -19,7 +19,7 @@
   height: 100%;
 }
 
-.innerForm input {
+.innerForm input, textarea {
   padding: 10px;
   border: 1px solid #808080;
   width: 70%;
@@ -55,7 +55,7 @@
 }
 
 .form-button:first-child {
-  color: #2A623D;
+  color: #222F5B;
 }
 
 .errorsList {
@@ -87,7 +87,7 @@
 #bioTextarea {
   font-size:small;
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 3px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
