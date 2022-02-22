@@ -16,9 +16,10 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
-.innerForm input {
+.innerForm input, textarea {
   padding: 10px;
   border: 1px solid #808080;
   width: 70%;
@@ -32,6 +33,9 @@
 
 .middleInput {
   border-top: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 70%;
 }
 
 .lastInput {
@@ -51,5 +55,44 @@
 }
 
 .form-button:first-child {
-  color: #2A623D;
+  color: #222F5B;
+}
+
+.errorsList {
+  color: red;
+}
+
+#year {
+  margin-left: 10px;
+  width: auto;
+  height: 3em;
+}
+
+#houseSelect {
+  margin: 15px;
+  height: 35px;
+  align-self: center;
+}
+
+.yearLabel {
+  margin-left: 10%;
+}
+
+.houseYearContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bioTextarea {
+  font-size:small;
+  padding-top: 10px;
+  padding-left: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#bioTextarea::placeholder {
+  padding-top: 7px;
+  padding-left: 7px;
+  font-size:medium;
 }

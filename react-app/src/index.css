@@ -19,3 +19,8 @@ body {
 .cauldron {
     height: 30px;
 }
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+ }
