@@ -1,6 +1,6 @@
 # MagicBook
 
-<a href="">Live Site</a>  |  <a href="https://github.com/DanielLaV/MagicBook/wiki"> Project Wiki</a> | <a href="https://github.com/DanielLaV/MagicBook/issue">Report Bug</a>
+<a href="https://magicbook-hp.herokuapp.com/">Live Site</a>  |  <a href="https://github.com/DanielLaV/MagicBook/wiki"> Project Wiki</a> | <a href="https://github.com/DanielLaV/MagicBook/issue">Report Bug</a>
 
 MagicBook is a website where students of Hogwarts can socialize and plan events, including their class schedule. This website was designed as a Week 21 project as part of App Academy's 24-week Full Stack Software Engineering Bootcamp.
 
