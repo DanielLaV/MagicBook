@@ -1,7 +1,7 @@
 """empty message
 
 Revision ID: b5a0533497a6
-Revises: 
+Revises:
 Create Date: 2022-02-17 12:28:56.319284
 
 """
@@ -28,7 +28,7 @@ def upgrade():
     sa.Column('house', sa.String(length=16), nullable=False),
     sa.Column('year', sa.Integer(), nullable=False),
     sa.Column('bio', sa.String(length=256), nullable=True),
-    sa.Column('pic', sa.String(length=128), nullable=True),
+    sa.Column('pic', sa.String(length=512), nullable=True),
     sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
     sa.Column('updated_at', sa.DateTime(), nullable=True),
     sa.PrimaryKeyConstraint('id'),
