@@ -41,8 +41,8 @@ const SignupForm = () => {
       return dispatch(signUp(payload))
         .then((response) => {
 
-          if (response?.errors) {
-            console.log('errors line 27', errors)
+          if (response.errors) {
+            console.log('errors line 27', response.errors)
             setErrors(response.errors)
             return
           }

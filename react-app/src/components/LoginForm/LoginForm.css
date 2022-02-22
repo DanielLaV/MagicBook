@@ -60,6 +60,7 @@
 
 .errorsList {
   color: red;
+  padding-top: 10px;
 }
 
 #year {
@@ -94,5 +95,5 @@
 #bioTextarea::placeholder {
   padding-top: 7px;
   padding-left: 7px;
-  font-size:medium;
+  font-size:small;
 }

@@ -47,7 +47,7 @@ const LoginForm = () => {
 		<div className="form-container">
 			<form className="outerForm" onSubmit={onLogin}>
 				<div>
-					<div className="error-list">{errors[0]}</div>
+					<div className="errorsList">{errors[0]}</div>
 				</div>
 				<div className="innerForm">
 					<h1>Log In</h1>
