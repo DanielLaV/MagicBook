@@ -29,3 +29,8 @@
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
+
+#root {
+  display: flex;
+  flex-direction: row;
+}

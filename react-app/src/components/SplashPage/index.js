@@ -3,13 +3,20 @@ import splash from '../../assets/splash.jpeg';
 import './SplashPage.css'
 import LoginForm from '../LoginForm';
 import SignupForm from '../SignupForm';
+import { useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+
 
 
 const SplashPage = () => {
 
+	const user = useSelector((state) => state.session.user);
     const [form, setForm] = useState('Login');
     let showLogin = form === 'Login';
 
+    if (user) {
+		return <Redirect to="/posts" />;
+	}
 
     const clickLogin = () => {
         setForm('Login')
