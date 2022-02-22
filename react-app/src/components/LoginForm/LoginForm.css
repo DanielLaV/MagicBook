@@ -15,12 +15,14 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 .innerForm input {
   padding: 10px;
   border: 1px solid #808080;
-  width: 150%;
+  width: 70%;
+  max-width: 300px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
