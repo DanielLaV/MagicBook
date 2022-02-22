@@ -19,7 +19,7 @@ const LoginForm = () => {
 		setErrors([]);
 		return dispatch(login(email, password)).then((response) => {
 			if (response?.errors) {
-				setErrors(response.errors);
+				setErrors("Incorrect login information");
 				return;
 			} else if (!response?.errors) history.push('/');
 		});
@@ -47,7 +47,7 @@ const LoginForm = () => {
 		<div className="form-container">
 			<form className="outerForm" onSubmit={onLogin}>
 				<div>
-					<div className="errorsList">{errors[0]}</div>
+					<div className="errorsList">{errors}</div>
 				</div>
 				<div className="innerForm">
 					<h1>Log In</h1>
