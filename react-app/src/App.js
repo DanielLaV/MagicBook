@@ -35,10 +35,10 @@ function App() {
           <SplashPage />
         </Route>
         <Route path='/login' exact={true}>
-          <LoginForm />
+          <SplashPage />
         </Route>
         <Route path='/sign-up' exact={true}>
-          <SignUpForm />
+          <SplashPage />
         </Route>
         <ProtectedRoute path='/posts' exact={true} >
           <NavBar />

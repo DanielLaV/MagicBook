@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
-import LoginFormModal from '../LoginFormModal';
-import SignupFormModal from '../SignupFormModal';
+import LoginForm from '../LoginForm';
+import SignupForm from '../SignupForm';
 import { useSelector } from "react-redux";
 import "./Navigation.css"
 
@@ -28,12 +28,11 @@ const NavBar = () => {
     sessionLinks = (
       <ul className="unauthNavLinks">
         <li>
-          <LoginFormModal to='/login' exact={true} activeClassName='active'>
-          </LoginFormModal>
+          <LoginForm to='/login' exact={true} activeClassName='active' />
         </li>
         <li>
-          <SignupFormModal to='/sign-up' exact={true} activeClassName='active'>
-          </SignupFormModal>
+          <SignupForm to='/sign-up' exact={true} activeClassName='active'>
+          </SignupForm>
         </li>
       </ul>
     );
