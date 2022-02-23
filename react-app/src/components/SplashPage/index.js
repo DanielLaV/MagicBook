@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import splash from '../../assets/splash.jpeg';
-import './SplashPage.css'
+import fullLogo from '../../assets/full-logo.png';
+import './SplashPage.css';
 import LoginForm from '../LoginForm';
 import SignupForm from '../SignupForm';
 import { useSelector } from 'react-redux';
@@ -30,6 +31,7 @@ const SplashPage = () => {
         <div className="splashPage">
             <div className="bgImageContainer">
                 <img className="bgImage" src={splash} alt="potion bottle with wand"></img>
+                <img className="siteNameImage" src={fullLogo} alt="website name"></img>
             </div>
             <div className="rightHalf">
                 <div className="userAuthContainer">

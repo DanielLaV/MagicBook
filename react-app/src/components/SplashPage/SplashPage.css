@@ -12,7 +12,25 @@ img {
 }
 
 .bgImageContainer {
-    width: 50%;
+    width: 50vw;
+    position: relative;
+}
+
+.bgImage {
+    position:absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.siteNameImage {
+    position:absolute;
+    height: auto;
+    width: 60%;
+    z-index: 2;
+    left: 20%;
+    top: 10%;
 }
 
 body {

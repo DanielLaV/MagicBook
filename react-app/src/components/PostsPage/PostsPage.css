@@ -1,5 +1,4 @@
 .browsePageContainer {
-  margin-left: 20vw;
   width: 100%;
 }
 
@@ -98,11 +97,11 @@
   display: flex;
   margin: 10px;
 }
-
+/*
 #root {
   display: flex;
   flex-direction: row;
-}
+} */
 
 .formButtons {
   align-self: center;

@@ -6,7 +6,6 @@
 body {
     background: linear-gradient(#AE0001, #FFED86, #2A623D, #222F5B);
     margin-bottom: 40px;
-    display: flex;
     background-repeat: no-repeat;
 }
 

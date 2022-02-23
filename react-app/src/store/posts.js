@@ -37,6 +37,7 @@ export const getPosts = () => async (dispatch) => {
 }
 
 export const getOnePost = (id) => async (dispatch) => {
+    console.log('in getonePOst thunk')
     const res = await fetch(`/api/posts/${id}`, {
         headers: { "Content-Type": "application/json" }
     });
