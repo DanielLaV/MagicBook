@@ -26,9 +26,12 @@ function AddPostForm() {
                         setErrors(response.errors)
                         return
                     }
+                    setSuccess("Post added!");
+
                     setTimeout(() => {
-                        setSuccess("Post added!");
-                    }, 800);
+                        setSuccess("");
+                    }, 800)
+                    setContent("");
                 }
             );
     };
