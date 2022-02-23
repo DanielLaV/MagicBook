@@ -48,7 +48,7 @@ export const getPostComments = (postId) => async (dispatch) => {
 
 export const getComments = () => async (dispatch) => {
     console.log("===== getComments")
-    const response = await fetch(`/api/comments`, {
+    const response = await fetch(`/api/comments/`, {
         headers: { "Content-Type": "application/json" }
     });
     const comments = await response.json();
@@ -60,7 +60,7 @@ export const getComments = () => async (dispatch) => {
 
 
 export const getOneComment = (id) => async (dispatch) => {
-    const response = await fetch(`/api/comments/${id}`, {
+    const response = await fetch(`/api/comments/${id}/`, {
         headers: {
             "Content-Type": "application/json"
         }
@@ -72,7 +72,7 @@ export const getOneComment = (id) => async (dispatch) => {
     return comment;
 }
 export const editComment = (payload) => async (dispatch) => {
-    const response = await fetch(`/api/comments/${payload.commentId}`,
+    const response = await fetch(`/api/comments/${payload.commentId}/`,
         {
             method: 'PUT',
             headers: {
@@ -90,13 +90,13 @@ export const editComment = (payload) => async (dispatch) => {
 
 
 export const deleteComment = (payload) => async (dispatch) => {
-    const getCurrComment = await fetch(`/api/comments/${payload.comment_id}`, {
+    const getCurrComment = await fetch(`/api/comments/${payload.comment_id}/`, {
         headers: {
             "Content-Type": "application/json"
         }
     });
     if (getCurrComment.ok) {
-        const delComment = await fetch(`/api/comments/${payload.comment_id}`,
+        const delComment = await fetch(`/api/comments/${payload.comment_id}/`,
             {
                 headers: {
                     "Content-Type": "application/json"
