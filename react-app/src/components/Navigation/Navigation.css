@@ -9,6 +9,9 @@
     width: 20vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     max-width: 220px;
 }
@@ -35,13 +38,10 @@
 }
 
 .navLinks {
-    margin: 5vh;
-    width: 100%;
-    text-align: center;
+    margin: 2vh;
     background-color: none;
     color: white;
-    text-decoration: none;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: bolder;
 }
 
@@ -50,5 +50,5 @@ button.navLinks {
     border: none;
     bottom: 2vh;
     font-size: 2vh;
-    margin-top: 30vh;
+    margin-bottom: 5vh;
 }
