@@ -1,0 +1,17 @@
+.usersPage {
+    margin-left: 20vw;
+    margin-bottom: 30px;
+    height: 100%;
+    padding-left: 5vw;
+}
+
+.eachUser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.userLink {
+    color: black;
+}
