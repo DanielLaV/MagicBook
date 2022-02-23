@@ -107,7 +107,7 @@ Users can edit or remove their posts from their profile.
 ### Adding and Removing Comments From Posts
 Users can comment on posts. They can read other comments and edit and delete their own comments.
 <p align='center'>
-<img src='images/study-list-buttons.PNG' alt='Creating a comment feature'>
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/58845762/155369530-33b86aa4-f0ab-41b9-8864-72f4a88591ee.png">
 </p>
 
 
