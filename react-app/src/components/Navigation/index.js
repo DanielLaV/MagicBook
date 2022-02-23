@@ -19,9 +19,9 @@ const NavBar = () => {
 
   return (
     <nav className="NavigationBar">
-      <div className="logoContainer">
+      <NavLink to='/' className="logoContainer">
         <img className='logoImg' src={logo} alt="Logo"></img>
-      </div>
+      </NavLink>
       <div className="navLinkContainer">
         <NavLink to='/posts' className='navLinks'>Home</NavLink>
         <NavLink to='/users' className='navLinks'>Classmates</NavLink>
