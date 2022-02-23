@@ -66,7 +66,7 @@ Full user stories for the initial development phase are available on the [User S
 ### User Registration and Authentication
 New users can register for an account by entering a unique username and email, their name, school house, year and a secure password.
 <p align='center'>
-<img width="505" alt="sign up form" src="https://user-images.githubusercontent.com/58845762/155364862-33c99c76-7603-46e3-96bc-a7d7ef6b1686.png">
+<img width="300" alt="sign up form" src="https://user-images.githubusercontent.com/58845762/155364862-33c99c76-7603-46e3-96bc-a7d7ef6b1686.png">
 
 </p>
 
