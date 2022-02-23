@@ -81,7 +81,7 @@ Logged in users can edit their profile.
 <img src='images/edit-bio.PNG' alt='Edit profile feature'>
 </p>
 
-Users may log out of their account by clicking the **LOGOUT** button on the site-wide header.
+Users may log out of their account by clicking the **LOGOUT** button on the site-wide navigation sidebar.
 <p align='center'>
 <img width="200" alt="logout button" src="https://user-images.githubusercontent.com/58845762/155369079-77e1a62e-71e3-486d-86c5-e1c2d0c2a527.png">
 
