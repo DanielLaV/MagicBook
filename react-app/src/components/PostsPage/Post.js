@@ -24,7 +24,9 @@ function Post({ post }) {
                 </NavLink>
             </div>
             <div className='contentContainer'>
-                <p className='postContent'>{post.content}</p>
+                <NavLink className='postLink' to={`/posts/${post.id}`}>
+                    <p className='postContent'>{post.content}</p>
+                </NavLink>
                 {isOwner && <div className='formButtons'>
                     <DeletePostModal post={post} />
                     <EditPostFormModal post={post} />
