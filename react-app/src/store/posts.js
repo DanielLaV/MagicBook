@@ -48,6 +48,10 @@ export const getOnePost = (id) => async (dispatch) => {
     return data;
 }
 
+// export const getOneUsersPosts = (id) => async (dispatch) => {
+//     const res = await fetch(`/api/`)
+// }
+
 export const addPost = (newPost) => async (dispatch) => {
 
     const res = await fetch('/api/posts/', {

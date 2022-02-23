@@ -51,6 +51,7 @@ function EditCommentForm({ setShowModal, comment }) {
             ))}
           </ul>
           <form onSubmit={handleSubmit} className="form">
+            <h3 className="editPostTitle">Edit Comment</h3>
             <div className="text-container">
               <input
                 id="content"
@@ -59,7 +60,7 @@ function EditCommentForm({ setShowModal, comment }) {
                 onChange={(e) => setContent(e.target.value)}
                 required
                 placeholder="Write a comment..."
-                className="input"
+                className="commentInput"
               />
             </div>
             <div className="form-button-container">
