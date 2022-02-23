@@ -46,7 +46,7 @@ def main():
         return {"comments": [comment.to_dict() for comment in comments]}
 
 
-@comment_routes.route('/<int:id>', methods=['GET', 'PUT'])
+@comment_routes.route('/<int:id>/', methods=['GET', 'PUT'])
 def one_comment(id):
     """
     GET requests return a single comment
@@ -69,7 +69,7 @@ def one_comment(id):
     return one_comment.to_dict()
 
 
-@comment_routes.route('/<int:id>', methods=['DELETE'])
+@comment_routes.route('/<int:id>/', methods=['DELETE'])
 def delete_comment(id):
     """
     Deletes a single comment with the id of 'id'

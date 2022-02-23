@@ -60,7 +60,7 @@ def post_comments(id):
     return make_response(404)
 
 
-@post_routes.route('/<int:id>', methods=['GET', 'PUT'])
+@post_routes.route('/<int:id>/', methods=['GET', 'PUT'])
 def single_post(id):
     """
     GET requests retrieve one post
@@ -83,7 +83,7 @@ def single_post(id):
     return new_post.to_dict()
 
 
-@post_routes.route('/<int:id>', methods=['DELETE'])
+@post_routes.route('/<int:id>/', methods=['DELETE'])
 def delete_post(id):
     """
     Deletes the post matching the id of id

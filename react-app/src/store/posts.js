@@ -38,7 +38,7 @@ export const getPosts = () => async (dispatch) => {
 
 export const getOnePost = (id) => async (dispatch) => {
     console.log('in getonePOst thunk')
-    const res = await fetch(`/api/posts/${id}`, {
+    const res = await fetch(`/api/posts/${id}/`, {
         headers: { "Content-Type": "application/json" }
     });
     const data = await res.json();
@@ -67,7 +67,7 @@ export const addPost = (newPost) => async (dispatch) => {
 }
 
 export const editPost = post => async (dispatch) => {
-    const res = await fetch(`/api/posts/${post.id}`, {
+    const res = await fetch(`/api/posts/${post.id}/`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(post)
@@ -80,13 +80,13 @@ export const editPost = post => async (dispatch) => {
 }
 
 export const deletePost = commit => async (dispatch) => {
-    const currPost = await fetch(`/api/posts/${commit.post_id}`, {
+    const currPost = await fetch(`/api/posts/${commit.post_id}/`, {
         headers: {
             "Content-Type": "application/json"
         }
     });
     if (currPost.ok) {
-        const delPost = await fetch(`/api/posts/${commit.post_id}`,
+        const delPost = await fetch(`/api/posts/${commit.post_id}/`,
             {
                 headers: {
                     "Content-Type": "application/json"
