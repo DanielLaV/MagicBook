@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import NavBar from './components/Navigation';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import SplashPage from './components/SplashPage';
-import UsersList from './components/UsersList';
+import UsersList from './components/UsersPage';
 import User from './components/User';
 import { authenticate } from './store/session';
 import Footer from './components/Footer';
