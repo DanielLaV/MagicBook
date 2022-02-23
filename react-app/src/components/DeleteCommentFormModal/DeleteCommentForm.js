@@ -35,21 +35,23 @@ function DeleteCommentForm({ setShowModal, comment }) {
 
     return (
 
-    <div className="delete">
+        <div className="deletePost">
 
-    <h2  >Are you sure you want to delete this comment?</h2>
-        <h3 style={{color:"black"}}>This cannot be undone.</h3>
-        <ul className="error-list">
-            {errors.map((error, idx) => (
-                <li key={idx} className="errors">{error}</li>
-            ))}
-        </ul>
-        <form onSubmit={submitDelete}>
-            <button type="submit" className="dark-button">Yes</button>
-            <button type="button" onClick={(e) => setShowModal(false)} className="light-button">No</button>
-        </form>
-        <h2 style={{color:"green"}}>{success}</h2>
-    </div>)
+            <h2  >Are you sure you want to delete this comment?</h2>
+            <h3 style={{ color: "black" }}>This cannot be undone.</h3>
+            <ul className="error-list">
+                {errors.map((error, idx) => (
+                    <li key={idx} className="errors">{error}</li>
+                ))}
+            </ul>
+            <form onSubmit={submitDelete}>
+                <div className="buttonContainer">
+                    <button type="submit" className="dark-button">Yes</button>
+                    <button type="button" onClick={(e) => setShowModal(false)} className="light-button">No</button>
+                </div>
+            </form>
+            <h2 style={{ color: "green" }}>{success}</h2>
+        </div>)
 }
 
 export default DeleteCommentForm

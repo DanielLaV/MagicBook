@@ -1,4 +1,48 @@
-/* textarea {
-    width: 50vw;
-    height: 10vh;
-} */
+.form-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:90%;
+    align-items: center;
+}
+
+.editPostTitle {
+    margin-bottom: 10%;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.input {
+    height: 300px;
+    border-radius: 5px;
+}
+
+.commentInput {
+    height: 50px;
+    margin: 2vw;
+}
+
+.deletePost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFED86;
+}
+
+.buttonContainer > button {
+    margin: 10px;
+    background-color: #AE0001;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}

@@ -42,7 +42,7 @@ function EditPostForm({ setShowModal, post }) {
 			<form className="form" onSubmit={handleSubmit}>
 				<ul>{errors.map((error, idx) => <li key={idx}>{error}</li>)}</ul>
 
-				<label className="input">Post</label>
+				<label className="editPostTitle">Post</label>
 				<textarea
 					type="text"
 					value={content}
