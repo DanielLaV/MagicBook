@@ -12,9 +12,6 @@ function Post({ post }) {
     const user = useSelector(state => state.session.user);
     const postOwner = post.user;
     const isOwner = +postOwner.id === +user.id;
-    // const [theme, setTheme] = useState("");
-
-
 
 
     return (
@@ -23,12 +20,14 @@ function Post({ post }) {
                 <img className='postUserPic' src={postOwner.pic} alt="User profile"></img>
                 <p className='postUserName'>{postOwner.username}</p>
             </div>
-            <p className='postContent'>{post.content}</p>
-            {isOwner && <div className='form-buttons'>
-                <DeletePostModal post={post} />
-                <EditPostFormModal post={post} />
+            <div className='contentContainer'>
+                <p className='postContent'>{post.content}</p>
+                {isOwner && <div className='formButtons'>
+                    <DeletePostModal post={post} />
+                    <EditPostFormModal post={post} />
+                </div>
+                }
             </div>
-            }
             <div className='commentSection'>
                 <CommentList post={post} />
                 <AddCommentForm post={post} />

@@ -10,7 +10,12 @@ body {
 }
 
 .feather {
-    height: 20px;
+    height: 23px;
+    margin-left: 6px;
+}
+
+.feather:hover, .cauldron:hover {
+    transform: scale(2.1);
 }
 
 .cauldron {
@@ -20,4 +25,8 @@ body {
 textarea {
     font-family: inherit;
     font-size: inherit;
+ }
+
+ #root {
+    background: linear-gradient(#AE0001, #FFED86, #2A623D, #222F5B);
  }

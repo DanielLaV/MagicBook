@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Comment from '../Comment';
+import './Comment.css';
 
 
 const CommentList = ({ post }) => {

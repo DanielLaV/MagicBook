@@ -1,4 +1,3 @@
-import './comment.css';
 import DeleteCommentFormModal from '../DeleteCommentFormModal';
 import EditCommentFormModal from '../EditCommentFormModal';
 import { useSelector } from 'react-redux';
@@ -14,18 +13,22 @@ function Comment({ comment }) {
     if (comment) {
         return (
             <div className='commentWrapper'>
-                <div className='commentOwner'>
-                    {commenter.username}
+                <div className='commenterWrapper'>
+                    <img className='commenterPic' src={commenter.pic} alt='Commenter'></img>
+
+                    <div className='commenterName'>
+                        {commenter.username}
+                    </div>
                 </div>
                 <div className="commentContent">
                     {comment.content}
+                    {showButtons &&
+                        <div className='crudButtons'>
+                            <DeleteCommentFormModal comment={comment} />
+                            <EditCommentFormModal comment={comment} />
+                        </div>
+                    }
                 </div>
-                {showButtons &&
-                    <div className='crudButtons'>
-                        <DeleteCommentFormModal comment={comment} />
-                        <EditCommentFormModal comment={comment} />
-                    </div>
-                }
 
             </div>
         )

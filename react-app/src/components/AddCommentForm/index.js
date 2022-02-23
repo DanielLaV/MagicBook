@@ -38,19 +38,19 @@ function AddCommentForm({ post }) {
 
   return (
 
-    <div className='formView'>
+    <div className='addCommentFormWrapper'>
 
-      <div className="form-container">
-        <h2 style={{ color: "green" }}>
+      <div className="addCommentSuccess">
+        <p style={{ color: "green" }}>
           {success}
-        </h2>
+        </p>
       </div>
       <ul className="error-list">
         {errors.map((error, idx) => (
           <li key={idx} className="errors">{error}</li>
         ))}
       </ul>
-      <form className='form' onSubmit={handleSubmit}>
+      <form className='addCommentForm' onSubmit={handleSubmit}>
         <div className="text-container">
           <input
             type="text"
@@ -58,7 +58,7 @@ function AddCommentForm({ post }) {
             onChange={(e) => setContent(e.target.value)}
             required
             placeholder="Write a comment..."
-            className="input"
+            className="addCommentInput"
           />
           <button
             type="submit"

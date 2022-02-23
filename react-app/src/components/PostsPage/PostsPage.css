@@ -4,7 +4,7 @@
 }
 
 .browsePosts {
-  padding: 10vw;
+  padding: 0 10vw 0 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,14 +47,20 @@
 .allPosts {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  margin-bottom: 30px;
 }
 
 .postUserPic {
-  width: 4vw;
-  height: 4vh;
+  width: 32px;
+  height: 32px;
   border: 2px solid red;
   border-radius: 50%;
+  margin: 10px;
+}
+
+.postUserName {
+  font-size:larger;
+  font-weight: bold;
 }
 
 .postHeader {
@@ -63,7 +69,8 @@
 }
 
 .postContent {
-  width: 80%;
+  width: 90%;
+  margin-left: 10px;
 }
 
 .postContainer {
@@ -71,12 +78,30 @@
   flex-direction: column;
   justify-content: center;
   width: 500px;
-  background: #fff;
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  margin: 15px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.contentContainer {
+  display: flex;
+  border-bottom: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.commentSection {
+  display: flex;
+  margin: 10px;
 }
 
 #root {
   display: flex;
   flex-direction: row;
+}
+
+.formButtons {
+  align-self: center;
 }
