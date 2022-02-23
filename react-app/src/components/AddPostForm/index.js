@@ -34,7 +34,7 @@ function AddPostForm() {
     };
 
     return (
-        <div className="form-container">
+        <div id="addPostFormContainer" className="form-container">
             <form className='addPostForm' onSubmit={handleSubmit}>
                 <h2 style={{ color: "green", marginBottom: "-20px" }}>{success}</h2>
                 <ul>
@@ -52,7 +52,8 @@ function AddPostForm() {
                     value={content}
                     onChange={e => setContent(e.target.value)}
                     placeholder="What's on your mind?"
-                    className='input'
+                    className='middleInput'
+                    id="addPostTextarea"
                 />
 
                 <div className='form-button-container'>

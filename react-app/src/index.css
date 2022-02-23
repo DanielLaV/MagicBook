@@ -3,17 +3,19 @@
 }
 
 body {
-    /* background: linear-gradient(.25turn,#AE0001 25%, #FFED86 25% 50%, #2A623D 50% 75%, #222F5B 75% 100%); */
     background: linear-gradient(#AE0001, #FFED86, #2A623D, #222F5B);
     margin-bottom: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-repeat: no-repeat;
 }
 
 .feather {
-    height: 20px;
+    height: 23px;
+    margin-left: 6px;
+}
+
+.feather:hover, .cauldron:hover {
+    transform: scale(2.1);
 }
 
 .cauldron {
@@ -23,4 +25,8 @@ body {
 textarea {
     font-family: inherit;
     font-size: inherit;
+ }
+
+ #root {
+    background: linear-gradient(#AE0001, #FFED86, #2A623D, #222F5B);
  }

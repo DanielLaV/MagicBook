@@ -1,29 +1,53 @@
 .NavigationBar {
-    background-image: url("../../assets/hogwarts-banner.png");
-    background-size: contain;
+    /* background-image: url("../../assets/castle.jpeg"); */
+    background-color: rgba(0,0,0,0.8);
+    background-size:auto;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 17.2%;  /* (img-height / img-width * container-width) */
+    /* padding-top: 17.2%;  /* (img-height / img-width * container-width) */
                          /* (853 / 1280 * 100) */
-    padding-bottom: 50px;
-    max-width: 80%;
-    max-height: 10vh;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    max-width: 260px;
+}
+
+.logoContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoImg {
+    height:auto;
+    max-width: 20vh;
+    align-self: center;
 }
 
 .navLinkContainer {
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navButton {
-    color: purple;
+.navLinks {
+    margin: 10vh;
+    width: 100%;
+    text-align: center;
+    /* background-color: rgba(230, 215, 175, 0.2); */
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: bolder;
 }
 
-.unauthNavLinks {
-    display: flex;
-    justify-content: space-around;
-}
-
-.RightSideNav {
-    justify-self: center;
+button.navLinks {
+    background: none;
+    border: none;
+    bottom: 2vh;
+    font-size: 2.5vh;
 }

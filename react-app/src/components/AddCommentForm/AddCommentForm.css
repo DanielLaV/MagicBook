@@ -2,3 +2,30 @@
     width:fit-content;
     min-width: 60%;
 }
+
+.addCommentFormWrapper {
+    width: 100%;
+}
+
+.addCommentSuccess {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.text-container {
+    width: 100%;
+}
+
+.addCommentInput {
+    width: 80%;
+    margin-left: 15px;
+    border-radius: 10px;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.addCommentInput::placeholder {
+    padding: 3px 0 0 5px;
+    color:blanchedalmond;
+}

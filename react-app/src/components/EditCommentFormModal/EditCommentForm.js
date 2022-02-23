@@ -41,9 +41,7 @@ function EditCommentForm({ setShowModal, comment }) {
 
   return (
     <div className='formView'>
-      <div className="preview">
-
-        <div className="form-container">
+        <div className="editCommentForm">
           <h2 style={{ color: "green" }}>
             {success}
           </h2>
@@ -82,7 +80,6 @@ function EditCommentForm({ setShowModal, comment }) {
               </button>
             </div>
           </form>
-        </div>
       </div>
       </div>
 

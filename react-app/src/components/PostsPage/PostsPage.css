@@ -1,14 +1,66 @@
+.browsePageContainer {
+  margin-left: 20vw;
+  width: 100%;
+}
+
+.browsePosts {
+  padding: 0 10vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#addPostFormContainer {
+  width: 100%;
+}
+
+.addPostForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#addPostTextarea {
+  width: 40vw;
+  font-size:small;
+  padding-top: 10px;
+  padding-left: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgba(45, 30, 18, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+#addPostTextarea::hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#addPostTextarea::placeholder {
+  color: white;
+  padding: 5px;
+}
+
 .allPosts {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  margin-bottom: 30px;
 }
 
 .postUserPic {
-  width: 4vw;
-  height: 4vh;
+  width: 32px;
+  height: 32px;
   border: 2px solid red;
   border-radius: 50%;
+  margin: 10px;
+}
+
+.postUserName {
+  font-size:larger;
+  font-weight: bold;
 }
 
 .postHeader {
@@ -17,7 +69,8 @@
 }
 
 .postContent {
-  width: 80%;
+  width: 90%;
+  margin-left: 10px;
 }
 
 .postContainer {
@@ -25,7 +78,30 @@
   flex-direction: column;
   justify-content: center;
   width: 500px;
-  background: #fff;
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  margin: 15px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.contentContainer {
+  display: flex;
+  border-bottom: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.commentSection {
+  display: flex;
+  margin: 10px;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+}
+
+.formButtons {
+  align-self: center;
 }

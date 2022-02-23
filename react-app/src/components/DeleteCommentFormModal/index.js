@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import DeleteCommentForm from './DeleteCommentForm';
-import '../Comment/comment.css'
 import Cauldron from '../../assets/cauldron.svg';
 
 function DeleteCommentFormModal({comment}) {
@@ -14,7 +13,7 @@ function DeleteCommentFormModal({comment}) {
 
   return (
     <>
-      <input type="image" className='cauldronComment' src={Cauldron} alt="text" onClick={onSubmit} to="#" ></input>
+      <input type="image" className='cauldron' src={Cauldron} alt="text" onClick={onSubmit} to="#" ></input>
 
       {showModal && (
         <Modal onClose={() => setShowModal(false)}>

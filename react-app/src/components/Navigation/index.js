@@ -1,46 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Redirect } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
-import LoginForm from '../LoginForm';
-import SignupForm from '../SignupForm';
 import { useSelector } from "react-redux";
 import "./Navigation.css"
+import logo from '../../assets/logo.png';
+
 
 
 
 const NavBar = () => {
   const user = useSelector((state) => state.session.user);
 
-  let sessionLinks;
-
-  if (user) {
-    sessionLinks = (
-      <div className="navLinkContainer">
-        <NavLink to='/posts' activeClassName='userLink' className='navLink'>Browse Posts</NavLink>
-        <LogoutButton />
-      </div>
-    );
+  // Can't view page if not logged in
+  if (!user) {
+		return <Redirect to="/" />;
   }
 
-
-  else {
-    sessionLinks = (
-      <ul className="unauthNavLinks">
-        <li>
-          <LoginForm to='/login' exact={true} activeClassName='active' />
-        </li>
-        <li>
-          <SignupForm to='/sign-up' exact={true} activeClassName='active'>
-          </SignupForm>
-        </li>
-      </ul>
-    );
-  }
 
   return (
     <nav className="NavigationBar">
-      <div className="RightSideNav">
-        {sessionLinks}
+      <div className="logoContainer">
+        <img className='logoImg' src={logo} alt="Logo"></img>
+      <div className="navLinkContainer">
+        <NavLink to='/posts' activeClassName='navLinks' className='navLink'>Home</NavLink>
+        <LogoutButton />
+      </div>
       </div>
     </nav>
   );
