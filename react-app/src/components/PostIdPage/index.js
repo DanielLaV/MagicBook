@@ -3,12 +3,11 @@ import { useEffect } from 'react';
 import * as postActions from '../../store/posts';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import AddCommentFormModal from '../AddCommentFormModal';
-// import CommentBrowser from '../CommentsBrowser';
 import EditPostFormModal from '../EditPostModal';
 import DeletePostFormModal from '../DeletePostModal';
 
 function PostIdPage() {
+    console.log('in postsid')
     const dispatch = useDispatch();
     const { postId } = useParams();
     const user = useSelector((state) => state.session.user.id);

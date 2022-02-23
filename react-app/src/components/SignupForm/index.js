@@ -218,7 +218,7 @@ const SignupForm = () => {
               onChange={updateYear}
               default="1"
               min="1"
-              max="4"
+              max="7"
               id="year"
             >
             </input>
