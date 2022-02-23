@@ -4,6 +4,7 @@ import DeletePostModal from '../DeletePostModal';
 import EditPostFormModal from '../EditPostModal';
 import CommentList from '../CommentList';
 import AddCommentForm from '../AddCommentForm';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -18,7 +19,9 @@ function Post({ post }) {
         <div className="postContainer">
             <div className='postHeader'>
                 <img className='postUserPic' src={postOwner.pic} alt="User profile"></img>
-                <p className='postUserName'>{postOwner.username}</p>
+                <NavLink className='postUserNameLink' to={`/users/${postOwner.id}`}>
+                    <p className='postUserName'>{postOwner.username}</p>
+                </NavLink>
             </div>
             <div className='contentContainer'>
                 <p className='postContent'>{post.content}</p>
