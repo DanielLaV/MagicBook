@@ -5,7 +5,7 @@ import NavBar from './components/Navigation';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import SplashPage from './components/SplashPage';
 import UsersList from './components/UsersPage';
-import User from './components/User';
+import User from './components/UserIdPage';
 import { authenticate } from './store/session';
 import Footer from './components/Footer';
 import PostsPage from './components/PostsPage';

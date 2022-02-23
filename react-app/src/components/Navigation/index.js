@@ -23,6 +23,7 @@ const NavBar = () => {
         <img className='logoImg' src={logo} alt="Logo"></img>
       <div className="navLinkContainer">
         <NavLink to='/posts' className='navLinks'>Home</NavLink>
+        <NavLink to='/users' className='navLinks'>Classmates</NavLink>
         <LogoutButton />
       </div>
       </div>

@@ -61,6 +61,7 @@
 .postUserName {
   font-size:larger;
   font-weight: bold;
+  color:white;
 }
 
 .postHeader {
@@ -69,6 +70,7 @@
 }
 
 .postContent {
+  color: white;
   width: 90%;
   margin-left: 10px;
 }
