@@ -15,3 +15,15 @@
 .userLink {
     color: black;
 }
+
+.userPage {
+    margin-left: 20vw;
+    margin-bottom: 30px;
+    height: 100vh;
+    padding-left: 5vw;
+}
+
+.userHeader {
+    display: flex;
+    align-items: center;
+}

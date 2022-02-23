@@ -1,9 +1,9 @@
 .NavigationBar {
     /* background-image: url("../../assets/castle.jpeg"); */
     background-color: rgba(0,0,0,0.8);
-    background-size:auto;
+    /* background-size:auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     /* padding-top: 17.2%;  /* (img-height / img-width * container-width) */
                          /* (853 / 1280 * 100) */
     width: 20vw;
@@ -31,10 +31,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .navLinks {
-    margin: 10vh;
+    margin: 5vh;
     width: 100%;
     text-align: center;
     background-color: none;
@@ -49,4 +50,5 @@ button.navLinks {
     border: none;
     bottom: 2vh;
     font-size: 2vh;
+    margin-top: 30vh;
 }
