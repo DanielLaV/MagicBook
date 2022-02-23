@@ -72,7 +72,8 @@ New users can register for an account by entering a unique username and email, t
 
 Existing users can log in to their account by submitting their credentials via the login form.
 <p align='center'>
-<img src='images/login.PNG' alt='Login modal'>
+<img width="300" alt="login form" src="https://user-images.githubusercontent.com/58845762/155367128-b802052e-e3ab-4f25-836a-0e82941f55e1.png">
+
 </p>
 
 Logged in users can edit their profile.
@@ -82,33 +83,16 @@ Logged in users can edit their profile.
 
 Users may log out of their account by clicking the **LOGOUT** button on the site-wide header.
 <p align='center'>
-<img src='images/logout-button.PNG' alt='Logout button in navigation bar'>
-</p>
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/58845762/155367488-516a0119-fd79-4bab-be95-b021c8855af8.png">
 
-
-### Creating and Modifying An Event
-Logged-in users can create a new event with a title and a description.
-<p align='center'>
-<img src='images/create-deck.PNG' alt='Creating a new event feature'>
-</p>
-
-All users can view public event information. Event owners can only edit or delete their own events.
-<p align='center'>
-<img src='images/deck-details.PNG' alt='Creating a new event'>
-</p>
-
-Only users invited to a private event can see that event.
-
-When modifying an event, an Edit form will populate with the event's current information. The user who created the event will be able to edit the event title and description.
-<p align='center'>
-<img src='images/edit-deck-modal.PNG' alt='Editing an event'>
 </p>
 
 
 ### Creating and Modifying A Post
  A user may add new posts to their profile.
 <p align='center'>
-<img src='images/add-card.PNG' alt='Creating a new post feature'>
+<img width="523" alt="add new post feature" src="https://user-images.githubusercontent.com/58845762/155367830-6f033baa-6fb8-4031-9c40-97e10153fa72.png">
+ <img width="758" alt="image" src="https://user-images.githubusercontent.com/58845762/155368172-14f74d8e-e44d-4a46-a7ff-2286ce0788f5.png">
 </p>
 
 Users can edit or remove their posts from their profile.
@@ -134,7 +118,7 @@ The full database schema is available to view [on dbdiagram.io](https://dbdiagra
 
 
 ### Frontend Routes
-All frontend routes are covered in detail on the [Fronted Routes section of our project wiki](https://github.com/DanielLaV/MagicBook/wiki/Frontend-Routes). Frontend routes were designed to enable users access to basic functionality such as registration, authentication, viewing decks, accessing cards, searching by tags, and viewing their profile page where users can manage their decks.
+All frontend routes are covered in detail on the [Fronted Routes section of our project wiki](https://github.com/DanielLaV/MagicBook/wiki/Frontend-Routes). Frontend routes were designed to enable users access to basic functionality such as registration, authentication, viewing posts, accessing comments, and viewing their profile page where users can manage their info.
 
 ### API Routes
 All frontend routes are covered in detail on the [API Routes section of our project wiki](https://github.com/DanielLaV/MagicBook/wiki/API-Documentation). API routes were designed for users to interact with a page without being redirected.
@@ -148,9 +132,6 @@ All frontend routes are covered in detail on the [API Routes section of our proj
 #### **Site-wide Responsiveness**
 
 The website is currently functional on all screen sizes, but is styled for screens greater than 900 px in width. New smaller-scale layouts will be implemented so that the user experience on mobile or tablet devices is comparable to the desktop user experience.
-
-### Improved Maintainability
-
 \
 
 ## Developer
