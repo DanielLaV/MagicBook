@@ -1,6 +1,6 @@
 # MagicBook
 
-<img width="1919" alt="splash page" src="https://user-images.githubusercontent.com/58845762/155364475-2c5e9a76-7488-4bdb-94fb-39407d3c81ad.png">
+<img width="2146" alt="splash page" src="https://user-images.githubusercontent.com/58845762/155380601-72127731-df14-4264-ac0e-1220ec153928.png">
 
 
 <a href="https://magicbook-hp.herokuapp.com/">Live Site</a>  |  <a href="https://github.com/DanielLaV/MagicBook/wiki"> Project Wiki</a> | <a href="https://github.com/DanielLaV/MagicBook/issue">Report Bug</a>
