@@ -1,7 +1,6 @@
 from app.models import db, Comment
 
 
-# Adds a demo user, you can add other users here if you want
 def seed_comments():
     c1 = Comment(content="Classic Potter. Breaks the law and the Minister of Magic comes to save him. Could this country be more corrupt?", user_id=7, post_id=1)
     c2 = Comment(content="Yeah, the Malfoys have NEVER gotten away with anything illegal...", user_id=3, post_id=1)
