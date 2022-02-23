@@ -28,7 +28,7 @@ def seed_comments():
     c23 = Comment(content="I'm in. After dinner in the History classroom? We can throw things through Binns lol", user_id=16, post_id=11)
     c24 = Comment(content="Zacharias! You should be more respectful! He's both dead and your professor!", user_id=2, post_id=11)
     c25 = Comment(content="Meh, he doesn't care", user_id=16, post_id=11)
-    c26 = Comment(content="It's ok", user_id=2, post_id=14)
+    c26 = Comment(content="It's ok", user_id=3, post_id=14)
     c27 = Comment(content="I really like it", user_id=9, post_id=14)
     c28 = Comment(content="Amen", user_id=19, post_id=15)
     c29 = Comment(content="Excuse us for having lives", user_id=11, post_id=15)
