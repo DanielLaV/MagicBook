@@ -37,11 +37,10 @@
     margin: 10vh;
     width: 100%;
     text-align: center;
-    /* background-color: rgba(230, 215, 175, 0.2); */
     background-color: none;
     color: white;
     text-decoration: none;
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: bolder;
 }
 
@@ -49,5 +48,5 @@ button.navLinks {
     background: none;
     border: none;
     bottom: 2vh;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
