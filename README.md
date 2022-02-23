@@ -83,7 +83,7 @@ Logged in users can edit their profile.
 
 Users may log out of their account by clicking the **LOGOUT** button on the site-wide header.
 <p align='center'>
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/58845762/155367488-516a0119-fd79-4bab-be95-b021c8855af8.png">
+<img width="200" alt="logout button" src="https://user-images.githubusercontent.com/58845762/155369079-77e1a62e-71e3-486d-86c5-e1c2d0c2a527.png">
 
 </p>
 
