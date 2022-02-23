@@ -20,7 +20,7 @@ def seed_comments():
     c15 = Comment(content="Oh really? That sounds pretty dangerous. I definitely wouldn't want to mess around with that.", user_id=2, post_id=8)
     c16 = Comment(content="hahahaha meow lol", user_id=3, post_id=8)
     c17 = Comment(content="At least we're safe at Hogwarts.", user_id=1, post_id=9)
-    c18 = Comment(content="Why are you doing anything about it Potter? Too scared?", user_id=7, post_id=9)
+    c18 = Comment(content="Why aren't you doing anything about it Potter? Too scared?", user_id=7, post_id=9)
     c19 = Comment(content="I'm not an auror. Why would I do something about it?", user_id=1, post_id=9)
     c20 = Comment(content="Your stupidity and ignorance are actually mind boggling", user_id=7, post_id=9)
     c21 = Comment(content="It was so interesting!", user_id=2, post_id=10)
