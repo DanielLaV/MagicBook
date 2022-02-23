@@ -37,7 +37,7 @@ function AddPostForm() {
     };
 
     return (
-        <div id="addPostFormContainer" className="form-container">
+        <div id="addPostFormContainer" className="form-container" id="addPostId">
             <form className='addPostForm' onSubmit={handleSubmit}>
                 <h2 style={{ color: "green", marginBottom: "-20px" }}>{success}</h2>
                 <ul>
