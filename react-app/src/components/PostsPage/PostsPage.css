@@ -91,18 +91,15 @@
   border-bottom: 2px solid gray;
   border-radius: 10px;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .commentSection {
   display: flex;
   margin: 10px;
 }
-/*
-#root {
-  display: flex;
-  flex-direction: row;
-} */
 
 .formButtons {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
