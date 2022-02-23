@@ -1,7 +1,6 @@
 from app.models import db, Post
 
 
-# Adds a demo user, you can add other users here if you want
 def seed_posts():
     p1 = Post(user_id=1, content="I did some accidental magic this summer. I blew my aunt up to the size of a whale lol! I thought I was going to get in trouble, but it turns out Fudge is pretty cool.")
     p2 = Post(user_id=2, content="I may have taken too many classes this year. It's really starting to wear me out. It would be really helpful if @Ronnie and @BoyWhoLived would stay out of trouble!!")

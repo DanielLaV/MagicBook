@@ -1,7 +1,6 @@
 from app.models import db, User
 
 
-# Adds a demo user, you can add other users here if you want
 def seed_users():
     demo = User(username='BoyWhoLived', first_name='Harry', last_name="Potter", email='chosenOne@hogwarts.edu', password='password', house='Gryffindor', year=3, bio="I'm the Chosen One", pic='https://res.cloudinary.com/dsebdtcp0/image/upload/v1645028986/magicbook/Harry_tx9eo9.jpg')
     hermione = User(first_name='Hermione', last_name='Granger', username='Hermione', email='hermion@ghogwarts.edu', password='password', house='Gryffindor', year=3, bio="Books are amazing. Why wasn't I put in Ravenclaw?", pic='https://res.cloudinary.com/dsebdtcp0/image/upload/v1645028987/magicbook/Hermione_zmegde.jpg')
