@@ -1,8 +1,11 @@
 # MagicBook
 
+<img width="1919" alt="splash page" src="https://user-images.githubusercontent.com/58845762/155364475-2c5e9a76-7488-4bdb-94fb-39407d3c81ad.png">
+
+
 <a href="https://magicbook-hp.herokuapp.com/">Live Site</a>  |  <a href="https://github.com/DanielLaV/MagicBook/wiki"> Project Wiki</a> | <a href="https://github.com/DanielLaV/MagicBook/issue">Report Bug</a>
 
-MagicBook is a website where students of Hogwarts can socialize and plan events, including their class schedule. This website was designed as a Week 21 project as part of App Academy's 24-week Full Stack Software Engineering Bootcamp.
+MagicBook is a social media site for students of Hogwarts. This website was designed as a Week 21 project as part of App Academy's 24-week Full Stack Software Engineering Bootcamp.
 
 ## Technologies Used
 [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [Node.js](https://nodejs.org/en/) | [Flask](https://flask.palletsprojects.com/en/2.0.x/) | [React](https://reactjs.org/) | [Redux](https://redux.js.org/) | [SQLAlchemy](https://www.sqlalchemy.org/) | [PostgreSQL](https://www.postgresql.org/)
@@ -61,9 +64,10 @@ flask run
 Full user stories for the initial development phase are available on the [User Stories](https://github.com/DanielLaV/MagicBook/wiki/User-Stories) section of the project wiki. A feature list for the initial development phase is available on the [Feature List](https://github.com/DanielLaV/MagicBook/wiki/Feature-List) section of the project [wiki](https://github.com/DanielLaV/MagicBook/wiki).
 
 ### User Registration and Authentication
-New users can register for an account by entering a unique username, email and a secure password.
+New users can register for an account by entering a unique username and email, their name, school house, year and a secure password.
 <p align='center'>
-<img src='images/sign-up.PNG' alt='Sign up modal'>
+<img width="505" alt="sign up form" src="https://user-images.githubusercontent.com/58845762/155364862-33c99c76-7603-46e3-96bc-a7d7ef6b1686.png">
+
 </p>
 
 Existing users can log in to their account by submitting their credentials via the login form.
