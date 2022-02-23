@@ -13,7 +13,7 @@ const NavBar = () => {
 
   // Can't view page if not logged in
   if (!user) {
-		return <Redirect to="/" />;
+    return <Redirect to="/" />;
   }
 
 
@@ -21,13 +21,15 @@ const NavBar = () => {
     <nav className="NavigationBar">
       <div className="logoContainer">
         <img className='logoImg' src={logo} alt="Logo"></img>
+      </div>
       <div className="navLinkContainer">
         <NavLink to='/posts' className='navLinks'>Home</NavLink>
         <NavLink to='/users' className='navLinks'>Classmates</NavLink>
+      </div>
+      <div className='navLogoutContainer'>
         <LogoutButton />
       </div>
-      </div>
-    </nav>
+    </nav >
   );
 }
 
