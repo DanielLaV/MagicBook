@@ -40,7 +40,7 @@ def main():
             print("Form errors: ", form.errors)
             return {'errors': validation_errors_to_error_messages(form.errors)}, 401
     if request.method == 'GET':
-        posts = Post.query.order_by(desc(Post.created_at)).limit(10)
+        posts = Post.query.order_by(desc(Post.created_at)).all()
         return {"posts": [post.to_dict() for post in posts]}
     return new_post.to_dict()
 
