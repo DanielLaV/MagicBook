@@ -5,6 +5,10 @@
     padding-left: 5vw;
 }
 
+.usersPageContent {
+    padding-top: 5vh;
+}
+
 .eachUser {
     display: flex;
     flex-direction: row;
