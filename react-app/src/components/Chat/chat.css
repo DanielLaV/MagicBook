@@ -1,6 +1,14 @@
 .chatPage {
     height: 100vh;
-    margin-left: 30vw;
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chatTitle {
+    margin-top: 10vh;
 }
 
 .chatContainer {
@@ -8,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 80%;
-    height: 85vh;
+    height: 65vh;
     background-color: rgba(255, 255, 255, 0.3);
     overflow: hidden;
 }
