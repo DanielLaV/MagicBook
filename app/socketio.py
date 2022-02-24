@@ -5,8 +5,8 @@ import os
 # configure cors_allowed_origins
 if os.environ.get('FLASK_ENV') == 'production':
     origins = [
-        'http://magicbook-hp.herokuapp.com',
-        'http://magicbook-hp.herokuapp.com'
+        'http://magicbook-hp.herokuapp.com/chat',
+        'http://magicbook-hp.herokuapp.com/chat'
     ]
 else:
     origins = "*"

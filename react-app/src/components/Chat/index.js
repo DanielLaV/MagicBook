@@ -38,6 +38,9 @@ const Chat = () => {
 
     return (
         <div className='chatPage'>
+            <h1 className='chatTitle'>
+                Chatroom
+            </h1>
             <div className='chatContainer'>
                 <div id='chatMessages'>
                     {messages.map((message, ind) => (
