@@ -2,7 +2,7 @@ import './PostIdPage.css';
 import { useEffect } from 'react';
 import * as postActions from '../../store/posts';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
 import Post from '../PostsPage/Post';
 
 function PostIdPage() {
@@ -29,7 +29,7 @@ function PostIdPage() {
                 <Post post={post} />
             </div>
         )
-    } else return 'Error: This post does not exist';
+    } else return <Redirect to='/' />
 }
 
 export default PostIdPage;

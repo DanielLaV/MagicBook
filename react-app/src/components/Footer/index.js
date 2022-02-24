@@ -8,6 +8,38 @@ const Footer = () => {
 
   return (
     <footer>
+      <div className='footerTech'>
+        <div className='techs'>
+          React
+        </div>
+        <div>
+          |
+        </div>
+        <div className='techs'>
+          Flask
+        </div>
+        <div>
+          |
+        </div>
+        <div className='techs'>
+          Redux
+        </div>
+        <div>
+          |
+        </div>
+        <div className='techs'>
+          PostgreSQL
+        </div>
+        <div>
+          |
+        </div>
+        <div className='techs'>
+          SQLAlchemy
+        </div>
+        <div className='techs'>
+
+        </div>
+      </div>
 
       <div className='footerProfiles'>
         <a id="footer_names" href="https://www.linkedin.com/in/daniel-lavergne-137772206/" target="_blank" rel="noreferrer noopener">Daniel LaVergne
