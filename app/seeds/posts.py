@@ -15,7 +15,7 @@ def seed_posts():
     p11 = Post(user_id=11, content="DID YOU SEE WHAT @HANNAH WAS WEARING!? AHAHAHAHA")
     p12 = Post(user_id=12, content="Herbology was amazing today. It's amazing how many cool magical plants there are!")
     p13 = Post(user_id=13, content="Has anyone heard the new Weird Sisters song!? What a jam!")
-    p14 = Post(user_id=14, content="@Zacharias @Hannah Study group tonight? I could really use some help after is spent half of last year petrified!")
+    p14 = Post(user_id=14, content="@Zacharias @Hannah Study group tonight? I could really use some help after I spent half of last year petrified!")
     p15 = Post(user_id=15, content="I really need to study tonight. Neville keeps distracting me!")
     p16 = Post(user_id=16, content="I can't believe someone actually escaped Azkaban! It's never happened before and now there are dementors flying around. I'm pretty freaked tbh")
     p17 = Post(user_id=17, content="I'm pretty sure my aunt will capture Sirius Black before long. She's really good at her job.")
