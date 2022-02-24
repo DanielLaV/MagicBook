@@ -25,8 +25,10 @@ function UsersList() {
 
   return (
     <div className='usersPage'>
-      <h1 className='userListHeader'>Third Year Students</h1>
-      <div className='usersListContainer'>{userComponents}</div>
+      <div className='usersPageContent'>
+        <h1 className='userListHeader'>Third Year Students</h1>
+        <div className='usersListContainer'>{userComponents}</div>
+      </div>
     </div>
   );
 }
