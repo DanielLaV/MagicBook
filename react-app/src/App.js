@@ -10,6 +10,7 @@ import { authenticate } from './store/session';
 import Footer from './components/Footer';
 import PostsPage from './components/PostsPage';
 import PostIdPage from './components/PostIdPage';
+import Chat from './components/Chat';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -53,6 +54,10 @@ function App() {
         <ProtectedRoute path='/users/:userId' exact={true} >
           <NavBar />
           <User />
+        </ProtectedRoute>
+        <ProtectedRoute path='/chat' exact={true} >
+          <NavBar />
+          <Chat />
         </ProtectedRoute>
       </Switch>
       <Footer />

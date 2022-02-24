@@ -25,6 +25,7 @@ const NavBar = () => {
       <div className="navLinkContainer">
         <NavLink to='/posts' className='navLinks'>Home</NavLink>
         <NavLink to='/users' className='navLinks'>Classmates</NavLink>
+        <NavLink to='/chat' className='navLinks'>Chat</NavLink>
       </div>
       <div className='navLogoutContainer'>
         <LogoutButton />
