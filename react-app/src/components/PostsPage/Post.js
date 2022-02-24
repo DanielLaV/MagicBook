@@ -19,9 +19,9 @@ function Post({ post }) {
         <div className="postContainer">
             <div className='postHeader'>
                 <img className='postUserPic' src={postOwner.pic} alt="User profile"></img>
-                <NavLink className='postUserNameLink' to={`/users/${postOwner.id}`}>
+                {/* <NavLink className='postUserNameLink' to={`/users/${postOwner.id}`}> */}
                     <p className='postUserName'>{postOwner.username}</p>
-                </NavLink>
+                {/* </NavLink> */}
             </div>
             <div className='contentContainer'>
                 <NavLink className='postLink' to={`/posts/${post.id}`}>
