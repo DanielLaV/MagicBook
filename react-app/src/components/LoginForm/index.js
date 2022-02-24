@@ -26,9 +26,11 @@ const LoginForm = () => {
 	};
 
 	const demoLogin = () => {
-        const email = 'chosenOne@hogwarts.edu';
-        const password = 'password';
-        return dispatch(login(email, password));
+        const demoEmail = 'chosenOne@hogwarts.edu';
+        const demoPassword = 'password';
+		setEmail(demoEmail);
+		setPassword(demoPassword);
+        return dispatch(login(demoEmail, demoPassword));
     }
 
 	const updateEmail = (e) => {
