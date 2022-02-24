@@ -52,3 +52,7 @@ button.navLinks {
     font-size: 2vh;
     margin-bottom: 5vh;
 }
+
+.navLogoutContainer {
+    margin-bottom: 10vh;
+}
