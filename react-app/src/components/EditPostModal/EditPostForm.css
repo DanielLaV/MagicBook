@@ -25,9 +25,21 @@
     border-radius: 5px;
 }
 
+
 .commentInput {
-    height: 50px;
+    height: 40px;
+    width: 300px;
     margin: 2vw;
+}
+
+.editCommentForm {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-list {
+    padding-inline-start: 0;
 }
 
 .deletePost {

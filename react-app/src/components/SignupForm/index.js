@@ -104,7 +104,7 @@ const SignupForm = () => {
   }
 
   return (
-    <div className='form-container'>
+    <div className='authSplashContainer'>
       <form className='outerForm' onSubmit={onSignUp} >
         <div>
           {errors.map((error, ind) => (

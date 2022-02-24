@@ -44,7 +44,7 @@ const LoginForm = () => {
 	}
 
 	return (
-		<div className="form-container">
+		<div className="authSplashContainer">
 			<form className="outerForm" onSubmit={onLogin}>
 				<div>
 					<div className="errorsList">{errors}</div>
