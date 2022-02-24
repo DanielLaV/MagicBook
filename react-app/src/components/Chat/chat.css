@@ -1,0 +1,39 @@
+.chatPage {
+    height: 100vh;
+    margin-left: 30vw;
+}
+
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    height: 85vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+#chatMessages {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: large;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.chatForm {
+    width: fill;
+}
+
+.chatBox {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.eachChatMessage {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    overflow-wrap: break-word;
+    padding-left: 10px;
+}
