@@ -32,6 +32,16 @@
     margin: 2vw;
 }
 
+.editCommentForm {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-list {
+    padding-inline-start: 0;
+}
+
 .deletePost {
     display: flex;
     flex-direction: column;

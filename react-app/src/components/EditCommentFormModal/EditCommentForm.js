@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as commentActions from "../../store/comments";
+import '../EditPostModal/EditPostForm.css';
 
 function EditCommentForm({ setShowModal, comment }) {
   const dispatch = useDispatch();
