@@ -80,7 +80,9 @@ def single_post(id):
             db.session.commit()
         elif form.errors:
             return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-    return new_post.to_dict()
+    if new_post:
+        return new_post.to_dict()
+    return {"errors": "That post does not exist"}, 404
 
 
 @post_routes.route('/<int:id>/', methods=['DELETE'])

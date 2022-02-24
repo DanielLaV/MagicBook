@@ -5,9 +5,9 @@ footer {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 2.5vh;
+  height: 4vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -15,19 +15,29 @@ footer {
 -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 
-
-
+.footerTech {
+  display: flex;
+  width: 100%;
+  font-size: small;
+  /* padding: 2px 0 2px 0; */
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid gray;
 }
 
 .footerProfiles{
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .gitlogo{
   height: 12px;
   width: 12px;
   border-radius: 50%;
+  margin-bottom: 2px;
 }
 
 .gitlogo:hover{
@@ -39,6 +49,7 @@ box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   height: 12px;
   width: 12px;
   border-radius: 10%;
+  margin: 4px;
 }
 
 .linkedinlogo:hover{

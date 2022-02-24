@@ -12,6 +12,7 @@ body {
 .feather {
     height: 23px;
     margin-left: 6px;
+    margin-right: 5px;
 }
 
 .feather:hover, .cauldron:hover {
