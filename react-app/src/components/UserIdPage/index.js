@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../UsersPage/users.css';
-import * as postActions from '../../store/posts';
+
 
 function User() {
   const [user, setUser] = useState({});
   const { userId } = useParams();
+  // console.log(userId, 'userid')
 
   useEffect(() => {
     if (!userId) {
@@ -13,14 +14,12 @@ function User() {
     }
     (async () => {
       const response = await fetch(`/api/users/${userId}`);
-      const user = await response.json();
-      setUser(user);
+      const currUser = await response.json();
+      // console.log('currUser', currUser)
+      setUser(currUser);
     })();
   }, [userId]);
 
-  // useEffect(() => {
-
-  // }, [])
 
   if (!user) {
     return null;
