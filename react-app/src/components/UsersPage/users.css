@@ -1,12 +1,15 @@
 .usersPage {
     margin-left: 20vw;
     margin-bottom: 30px;
-    height: 100%;
+    height: 100vh;
     padding-left: 5vw;
 }
 
 .usersPageContent {
     padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .eachUser {
@@ -34,4 +37,9 @@
 .userHeader {
     display: flex;
     align-items: center;
+}
+
+.usersListContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
