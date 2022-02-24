@@ -132,7 +132,6 @@ All frontend routes are covered in detail on the [API Routes section of our proj
 #### **Site-wide Responsiveness**
 
 The website is currently functional on all screen sizes, but is styled for screens greater than 900 px in width. New smaller-scale layouts will be implemented so that the user experience on mobile or tablet devices is comparable to the desktop user experience.
-\
 
 ## Developer
 **Daniel LaVergne** | <a href='https://github.com/DanielLaV'>Github</a> | <a href='https://www.linkedin.com/in/daniel-lavergne-137772206/'>LinkedIn</a></br>
