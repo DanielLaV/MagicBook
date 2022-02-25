@@ -17,7 +17,7 @@ class User(db.Model, UserMixin):
     house = db.Column(db.String(16), nullable=False)
     year = db.Column(db.Integer, nullable=False)
     bio = db.Column(db.Text)
-    pic = db.Column(db.String(512), default="https://res.cloudinary.com/dsebdtcp0/image/upload/v1645030050/magicbook/dafault-profile_mlbiot.jpg")
+    pic = db.Column(db.String(512))
     created_at = db.Column(db.DateTime, server_default=func.now())
     updated_at = db.Column(db.DateTime, onupdate=func.now())
 
