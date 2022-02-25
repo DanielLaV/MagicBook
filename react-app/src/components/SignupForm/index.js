@@ -11,7 +11,7 @@ const SignupForm = () => {
   const [email, setEmail] = useState('');
   const [firstName, setFirst] = useState('');
   const [lastName, setLast] = useState('');
-  const [house, setHouse] = useState('House');
+  const [house, setHouse] = useState('Ravenclaw');
   const [year, setYear] = useState('1');
   const [bio, setBio] = useState('');
   const [pic, setPic] = useState('');
@@ -38,10 +38,11 @@ const SignupForm = () => {
     }
 
     if (password === repeatPassword) {
+      console.log('signup payload', payload)
       return dispatch(signUp(payload))
         .then((response) => {
 
-          if (response.errors) {
+          if (response?.errors) {
             console.log('errors line 27', response.errors)
             setErrors(response.errors)
             return
@@ -194,7 +195,7 @@ const SignupForm = () => {
             className='lastInput'
           ></input>
           <div className='houseYearContainer'>
-            <label></label>
+            <label>House</label>
             <select
               value={house}
               type='text'
@@ -204,7 +205,7 @@ const SignupForm = () => {
               className='middleInput'
               id="houseSelect"
             >
-              <option value="House" disabled>House</option>
+
               <option value="Ravenclaw">Ravenclaw</option>
               <option value="Slytherin">Slytherin</option>
               <option value="Hufflepuff">Hufflepuff</option>
