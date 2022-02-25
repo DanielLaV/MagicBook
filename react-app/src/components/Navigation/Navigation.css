@@ -21,6 +21,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .logoImg {
@@ -45,6 +47,10 @@
     font-weight: bolder;
 }
 
+.navLinks:hover {
+    transform: scale(1.3);
+}
+
 button.navLinks {
     background: none;
     border: none;
@@ -55,4 +61,8 @@ button.navLinks {
 
 .navLogoutContainer {
     margin-bottom: 10vh;
+}
+
+#navLogout {
+    cursor: pointer;
 }
