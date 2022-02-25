@@ -25,9 +25,6 @@ const SignupForm = () => {
     e.preventDefault();
     setErrors([])
 
-    if (!pic) {
-      setPic("https://res.cloudinary.com/dsebdtcp0/image/upload/v1645030050/magicbook/dafault-profile_mlbiot.jpg")
-    }
 
     const payload = {
       username,
@@ -42,7 +39,6 @@ const SignupForm = () => {
     }
 
     if (password === repeatPassword) {
-      console.log('signup payload', payload)
       return dispatch(signUp(payload))
         .then((response) => {
 

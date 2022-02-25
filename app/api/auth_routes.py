@@ -62,7 +62,10 @@ def sign_up():
     form = SignUpForm()
     form['csrf_token'].data = request.cookies['csrf_token']
     if form.validate_on_submit():
-        print('===============in validate')
+        if form.data['pic'] == '':
+            pic = "https://res.cloudinary.com/dsebdtcp0/image/upload/v1645030050/magicbook/dafault-profile_mlbiot.jpg"
+        else:
+            pic = form.data['pic']
         user = User(
             username=form.data['username'],
             email=form.data['email'],
@@ -72,7 +75,7 @@ def sign_up():
             house=form.data['house'],
             year=form.data['year'],
             bio=form.data['bio'],
-            pic=form.data['pic'],
+            pic=pic,
         )
         db.session.add(user)
         db.session.commit()
