@@ -73,6 +73,10 @@ body {
     cursor: pointer;
 }
 
+.authButton:hover {
+    transform: scale(1.2);
+}
+
 .userAuth {
     height: 100%;
 }
