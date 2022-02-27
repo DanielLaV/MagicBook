@@ -54,6 +54,10 @@
   color: #AE0001;
 }
 
+.form-button:hover {
+  transform: scale(1.3);
+}
+
 .form-button:first-child {
   color: #222F5B;
 }
