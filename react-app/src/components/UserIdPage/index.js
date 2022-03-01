@@ -6,19 +6,19 @@ import '../UsersPage/users.css';
 function User() {
   const [user, setUser] = useState({});
   const { userId } = useParams();
-  // console.log(userId, 'userid')
+  console.log(userId, 'userid')
 
-  useEffect(() => {
-    if (!userId) {
-      return;
-    }
-    (async () => {
-      const response = await fetch(`/api/users/${userId}`);
-      const currUser = await response.json();
-      // console.log('currUser', currUser)
-      setUser(currUser);
-    })();
-  }, [userId]);
+  // useEffect(() => {
+  //   if (!userId) {
+  //     return;
+  //   }
+  //   (async () => {
+  //     const response = await fetch(`/api/users/${userId}`);
+  //     const currUser = await response.json();
+  //     console.log('currUser', currUser)
+  //     setUser(currUser);
+  //   })();
+  // }, [userId]);
 
 
   if (!user) {

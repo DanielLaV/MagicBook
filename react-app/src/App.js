@@ -51,10 +51,10 @@ function App() {
           <NavBar />
           <UsersList />
         </ProtectedRoute>
-        {/* <ProtectedRoute path='/users/:userId' exact={true} >
+        <ProtectedRoute path='/users/:userId' exact={true} >
           <NavBar />
           <User />
-        </ProtectedRoute> */}
+        </ProtectedRoute>
         <ProtectedRoute path='/chat' exact={true} >
           <NavBar />
           <Chat />

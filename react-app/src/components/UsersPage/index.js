@@ -18,8 +18,7 @@ function UsersList() {
     return (
       <div className='eachUser' key={user.id}>
         <img className='postUserPic' src={user.pic} alt="User profile"></img>
-        {/* <NavLink className='userLink' to={`/users/${user.id}`}>{user.first_name} {user.last_name}</NavLink> */}
-        <p className='userLink'>{user.first_name} {user.last_name}</p>
+        <NavLink className='userLink' to={`/users/${user.id}`}>{user.first_name} {user.last_name}</NavLink>
       </div>
     );
   });
