@@ -8,17 +8,17 @@ function User() {
   const { userId } = useParams();
   console.log(userId, 'userid')
 
-  // useEffect(() => {
-  //   if (!userId) {
-  //     return;
-  //   }
-  //   (async () => {
-  //     const response = await fetch(`/api/users/${userId}`);
-  //     const currUser = await response.json();
-  //     console.log('currUser', currUser)
-  //     setUser(currUser);
-  //   })();
-  // }, [userId]);
+  useEffect(() => {
+    if (!userId) {
+      return;
+    }
+    (async () => {
+      const response = await fetch(`/api/users/${userId}`);
+      const currUser = await response.json();
+      console.log('currUser', currUser)
+      setUser(currUser);
+    })();
+  }, [userId]);
 
 
   if (!user) {

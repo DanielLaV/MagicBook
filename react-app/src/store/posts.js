@@ -1,6 +1,8 @@
 const LOAD_POSTS = 'LOAD_POSTS';
 const ADD_POST = 'ADD_POST';
 const DELETE_POST = 'DELETE_POST';
+const GET_USER = 'GET_USER';
+
 
 
 /* ----- ACTIONS ----- */
@@ -22,6 +24,13 @@ export const deleteOnePost = post => {
     return {
         type: DELETE_POST,
         payload: post
+    }
+}
+
+export const loadUserPosts = user => {
+    return {
+        type: GET_USER,
+        payload: user
     }
 }
 
@@ -100,6 +109,17 @@ export const deletePost = commit => async (dispatch) => {
     else return currPost;
 }
 
+export const getUser = id => async (dispatch) => {
+    const res = await fetch(`/api/users/${id}/`, {
+        headers: { "Content-Type": "application/json" }
+    });
+    const data = await res.json();
+    if (res.ok) {
+        dispatch(loadUserPosts(data))
+    }
+    return data;
+}
+
 
 /* ----- REDUCER ------ */
 const initialState = {};
@@ -121,6 +141,13 @@ const postsReducer = (state = initialState, action) => {
         case DELETE_POST: {
             const newState = Object.assign({}, state);
             delete newState[action.payload.id];
+            return newState;
+        }
+        case GET_USER: {
+            const newState = {};
+            action.payload.forEach((user) => {
+                newState[user.id] = user;
+            })
             return newState;
         }
         default: {
