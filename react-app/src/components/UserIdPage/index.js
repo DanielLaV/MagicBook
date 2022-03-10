@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../UsersPage/users.css';
+import * as postActions from "../../store/posts";
+import * as userActions from "../../store/users";
+import { useDispatch, useSelector } from 'react-redux';
+
 
 
 function User() {
   const [user, setUser] = useState({});
   const { userId } = useParams();
-  console.log(userId, 'userid')
+  const thisUser = useSelector(state => state.users.filter(user => user.id === userId))
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!userId) {
-      return;
-    }
-    (async () => {
-      const response = await fetch(`/api/users/${userId}`);
-      const currUser = await response.json();
-      console.log('currUser', currUser)
-      setUser(currUser);
-    })();
-  }, [userId]);
+    dispatch(userActions.getUser(userId));
+    dispatch(postActions.getPosts());
+    setUser(thisUser);
+  }, [dispatch, userId]);
 
 
   if (!user) {
