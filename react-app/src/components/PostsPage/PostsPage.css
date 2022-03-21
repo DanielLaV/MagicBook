@@ -69,6 +69,10 @@
   flex-direction: row;
 }
 
+.postLink {
+  width: 100%;
+}
+
 .postContent {
   color: white;
   width: 90%;
