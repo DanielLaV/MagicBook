@@ -48,8 +48,8 @@ function DeletePostForm({ payload, post }) {
             <h2>Are you sure you want to delete this post?</h2>
             <h3 style={{ color: "black" }} >This cannot be undone.</h3>
             <div className="buttonContainer">
-                <button className="deleteButton" type="button" onClick={(e) => submitDelete()} className="dark-button">Yes</button>
-                <button className="cancelButton" type="button" onClick={(e) => setShowModal(false)} className="light-button">No</button>
+                <button className="deleteButton" type="button" onClick={(e) => submitDelete()}>Yes</button>
+                <button className="cancelButton" type="button" onClick={(e) => setShowModal(false)}>No</button>
             </div>
             <h2 style={{ color: "green" }}>{success}</h2>
         </div>)

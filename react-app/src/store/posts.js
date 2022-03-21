@@ -30,8 +30,6 @@ export const getPosts = () => async (dispatch) => {
     const res = await fetch('/api/posts/');
     const data = await res.json();
     if (res.ok) {
-        console.log('posts', data.posts)
-        // const posts = data.posts.sort
         dispatch(loadPosts(data.posts));
         return res;
     }
