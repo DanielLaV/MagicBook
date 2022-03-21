@@ -10,6 +10,7 @@ import AddPostForm from '../AddPostForm';
 
 function PostsPage() {
     const posts = useSelector(state => Object.values(state.posts));
+    const reversePosts = posts.reverse();
     const userId = useSelector(state => state.session.user.id)
     const dispatch = useDispatch();
 
@@ -29,7 +30,7 @@ function PostsPage() {
                 </div>
                 <div className='postsDisplay'>
                     <div className='allPosts'>
-                        {posts?.map(post =>
+                        {reversePosts?.map(post =>
                             <div className="eachPost" key={post.id}>
                                 <Post post={post} />
                             </div>)}

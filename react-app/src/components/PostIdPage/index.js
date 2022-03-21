@@ -9,7 +9,7 @@ function PostIdPage() {
     console.log('in postsid')
     const dispatch = useDispatch();
     const { postId } = useParams();
-    const user = useSelector((state) => state.session.user.id);
+    // const user = useSelector((state) => state.session.user.id);
     const post = useSelector((state) => state.posts[postId]);
 
     useEffect(

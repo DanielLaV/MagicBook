@@ -11,6 +11,7 @@
 
 #addPostFormContainer {
   width: 100%;
+  height: auto;
 }
 
 .addPostForm {
@@ -66,6 +67,10 @@
 .postHeader {
   display: flex;
   flex-direction: row;
+}
+
+.postLink {
+  width: 100%;
 }
 
 .postContent {
