@@ -19,6 +19,7 @@ class Post(db.Model, UserMixin):
             'id': self.id,
             'content': self.content,
             'user_id': self.user_id,
+            'created_at': self.created_at,
             'user': self.user.to_dict()
         }
 

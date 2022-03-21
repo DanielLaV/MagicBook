@@ -20,7 +20,7 @@ def validation_errors_to_error_messages(validation_errors):
 @post_routes.route('/', methods=['POST', 'GET'])
 def main():
     """
-    GET requests return the 10 latest posts
+    GET requests return all posts
     POST requests create a new post in the database
     """
     if request.method == 'POST':
