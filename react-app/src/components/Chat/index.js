@@ -14,7 +14,7 @@ const Chat = () => {
     useEffect(() => {
         socket = io();
 
-        socket.emit("chat", { user: "Dumbledore", msg: "Welcome to the Hogwarts chatroom. Always be kind!"});
+        socket.emit("chat", { user: "Dumbledore", msg: "Welcome to Hogwart's chatroom. Always be kind!"});
 
         socket.on('chat', (chat) => {
             setMessages(messages => [...messages, chat])
