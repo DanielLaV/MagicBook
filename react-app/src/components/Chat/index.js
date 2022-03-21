@@ -14,6 +14,8 @@ const Chat = () => {
     useEffect(() => {
         socket = io();
 
+        socket.emit("chat", { user: "Dumbledore", msg: "Welcome to the Hogwarts chatroom. Always be kind!"});
+
         socket.on('chat', (chat) => {
             setMessages(messages => [...messages, chat])
         })
@@ -29,7 +31,7 @@ const Chat = () => {
     }
 
     const sendChat = (e) => {
-        console.log('in send chat')
+        // console.log('in send chat')
         e.preventDefault();
         socket.emit("chat", { user: user.username, msg: chatInput });
         setChatInput('');
