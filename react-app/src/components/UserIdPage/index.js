@@ -8,17 +8,19 @@ function User() {
   const { userId } = useParams();
   console.log(userId, 'userid')
 
-  // useEffect(() => {
-  //   if (!userId) {
-  //     return;
-  //   }
-  //   (async () => {
-  //     const response = await fetch(`/api/users/${userId}`);
-  //     const currUser = await response.json();
-  //     console.log('currUser', currUser)
-  //     setUser(currUser);
-  //   })();
-  // }, [userId]);
+  useEffect(() => {
+    if (!userId) {
+      return;
+    }
+    // get the user for this page and set that object as user
+    (async () => {
+      const response = await fetch(`/api/users/`);
+      const usersData = await response.json();
+      const users = usersData.users;
+      const currUser = users.filter(user => +user.id === +userId)[0];
+      setUser(currUser);
+    })();
+  }, []);
 
 
   if (!user) {
@@ -29,20 +31,18 @@ function User() {
     <div className='userPage'>
       <div className='aboutUser'>
         <div className='userHeader'>
-          <img className='postUserPic' src={user.pic} alt="User profile"></img>
-          <h2 className='userLink'>{user.first_name} {user.last_name}</h2>
+          <img className='userPic' src={user.pic} alt="User profile"></img>
+          <h1 className='userName'>{user.first_name} {user.last_name}</h1>
         </div>
         <div className='userBioContainer'>
-          <h4>About {user.first_name}</h4>
+          <h2>About {user.first_name}</h2>
           <p className='userBio'>{user.bio}</p>
         </div>
         <div>
-          <h4>House</h4>
-          <p className='userHouse'>{user.house}</p>
+          <h3>{user.house} House</h3>
         </div>
         <div>
-          <h4>Year</h4>
-          <p className='userYear'>I'm in year {user.year}</p>
+          <h3>Year {user.year}</h3>
         </div>
       </div>
       <div className='userPostsContainer'>

@@ -32,9 +32,28 @@
     padding-left: 5vw;
 }
 
+.aboutUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userPic {
+    height: 15vh;
+    width: auto;
+    border-radius: 5%;
+}
+
+.userName {
+    margin-left: 2vw;
+    font-size: 10vh;
+}
+
 .userHeader {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .usersListContainer {
