@@ -24,7 +24,6 @@ def seed_posts():
     p20 = Post(user_id=20, content="Nobody in this school cares about classes other than Ravenclaws. If you don't want to study, stay home! At least stop disturbing the rest of us!!")
     p21 = Post(user_id=21, content="Another summer perfectly in sync with Parvati")
 
-    db.session.add(p1)
     db.session.add(p4)
     db.session.add(p17)
     db.session.add(p5)
@@ -45,6 +44,7 @@ def seed_posts():
     db.session.add(p15)
     db.session.add(p19)
     db.session.add(p8)
+    db.session.add(p1)
 
     db.session.commit()
 
