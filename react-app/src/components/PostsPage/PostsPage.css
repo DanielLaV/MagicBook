@@ -1,5 +1,6 @@
 .browsePageContainer {
   width: 100%;
+  background: linear-gradient(#FFED86, #AE0001, #2A623D, #222F5B);
 }
 
 .browsePosts {
@@ -12,6 +13,15 @@
 #addPostFormContainer {
   width: 100%;
   height: auto;
+}
+
+@font-face {
+  font-family: HP;
+  src: url(../../assets/HARRYP__.TTF);
+}
+
+h1 {
+  font-family: HP;
 }
 
 .addPostForm {

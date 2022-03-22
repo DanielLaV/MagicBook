@@ -17,14 +17,15 @@
     justify-content: flex-end;
     width: 80%;
     height: 65vh;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
+    border-radius: 2%;
 }
 
 #chatMessages {
     display: flex;
     flex-direction: column;
-    color: black;
+    color: white;
     font-size: large;
     width: 100%;
     overflow: auto;
