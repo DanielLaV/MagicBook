@@ -1,5 +1,6 @@
 .browsePageContainer {
   width: 100%;
+  background: linear-gradient(#FFED86, #AE0001, #2A623D, #222F5B);
 }
 
 .browsePosts {
