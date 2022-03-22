@@ -15,6 +15,15 @@
   height: auto;
 }
 
+@font-face {
+  font-family: HP;
+  src: url(../../assets/HARRYP__.TTF);
+}
+
+h1 {
+  font-family: HP;
+}
+
 .addPostForm {
   width: 100%;
   display: flex;
